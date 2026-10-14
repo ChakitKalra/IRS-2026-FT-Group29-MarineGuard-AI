@@ -1,0 +1,21 @@
+{
+  "name": "marineguard-ai-frontend",
+  "version": "0.0.1",
+  "private": true,
+  "description": "Frontend for the MarineGuard AI coastal litter project",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "leaflet": "^1.9.4",
+    "react-leaflet": "^5.0.0"
+  },
+  "devDependencies": {
+    "vite": "^7.1.14"
+  },
+  "type": "module"
+}

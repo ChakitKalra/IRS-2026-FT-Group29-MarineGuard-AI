@@ -1,0 +1,42 @@
+{
+  "task": "pixel-level semantic segmentation",
+  "target_class": "Marine Debris",
+  "target_class_mask_id": 1,
+  "initial_reference": "rf_ss_si",
+  "models": [
+    {
+      "id": "rf_ss_si",
+      "name": "Random Forest — spectral signatures + spectral indices",
+      "features": "Sentinel-2 spectral bands plus indices",
+      "type": "pixel_classifier",
+      "status": "selected_initial_reference",
+      "published_marine_debris_f1": 0.80
+    },
+    {
+      "id": "rf_ss_si_glcm",
+      "name": "Random Forest — spectral signatures + indices + GLCM texture",
+      "features": "Sentinel-2 spectral bands, indices, and GLCM texture",
+      "type": "pixel_classifier",
+      "status": "baseline",
+      "published_marine_debris_f1": 0.79
+    },
+    {
+      "id": "rf_ss",
+      "name": "Random Forest — spectral signatures",
+      "features": "Sentinel-2 spectral bands",
+      "type": "pixel_classifier",
+      "status": "baseline",
+      "published_marine_debris_f1": 0.71
+    },
+    {
+      "id": "resnet_segmentation",
+      "name": "ResNet-style pixel segmenter",
+      "features": "11 Sentinel-2 spectral bands",
+      "type": "semantic_segmenter",
+      "status": "experimental",
+      "local_validation_marine_debris_f1": 0.057996,
+      "training_epochs": 10
+    }
+  ],
+  "metric_source": "MARIDA paper; values are published reference values, not local experiment results"
+}
