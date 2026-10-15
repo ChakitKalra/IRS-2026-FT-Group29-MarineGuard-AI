@@ -1,26 +1,44 @@
 import React, { useEffect, useState } from 'react';
 import { createRoot } from 'react-dom/client';
-import { MapContainer, TileLayer, CircleMarker, Popup, Polygon, Polyline, useMap, useMapEvents } from 'react-leaflet';
+import { MapContainer, TileLayer, CircleMarker, Popup, Polygon, Polyline, ImageOverlay, useMap, useMapEvents } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './styles.css';
 import { areas, tiles, colors } from './data';
+import ImageryPreparation from './components/ImageryPreparation';
 
 function MapPosition({ area, selected }) {
   const map = useMap();
   useEffect(() => { map.flyTo(selected ? [selected.lat, selected.lng] : area.center, selected ? 15 : area.zoom, { duration: 0.7 }); }, [area, selected, map]);
   return null;
 }
-function DrawClicks({ mode, onPoint }) {
-  useMapEvents({ click(e) { if (mode) onPoint([e.latlng.lat, e.latlng.lng]); } });
+function DrawClicks({ mode, onPoint, firstPoint, canClose, onClose, onHoverClose }) {
+  const map = useMap();
+  useMapEvents({
+    click(e) {
+      if (!mode) return;
+      if (canClose && firstPoint) {
+        const start = map.latLngToContainerPoint(firstPoint);
+        const clicked = map.latLngToContainerPoint(e.latlng);
+        if (start.distanceTo(clicked) <= 22) { onClose(); return; }
+      }
+      onPoint([e.latlng.lat, e.latlng.lng]);
+    },
+    mousemove(e) {
+      const nearStart = Boolean(mode && canClose && firstPoint && map.latLngToContainerPoint(firstPoint).distanceTo(map.latLngToContainerPoint(e.latlng)) <= 26);
+      onHoverClose(nearStart);
+    },
+  });
   return null;
 }
-function CoastalMap({ area, selected, visible, onSelect, drawMode, draftPoints, onDraftPoint, path }) {
+function CoastalMap({ area, selected, visible, onSelect, drawMode, draftPoints, onDraftPoint, onClosePolygon, path, predictionOverlay }) {
+  const [hoveringStart, setHoveringStart] = useState(false);
   return <MapContainer center={areas[0].center} zoom={11} scrollWheelZoom={false} doubleClickZoom={!drawMode} className={`coastal-map ${drawMode ? 'drawing' : ''}`} aria-label="Singapore coastal monitoring map">
     <TileLayer attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-    <MapPosition area={area} selected={selected}/><DrawClicks mode={drawMode} onPoint={onDraftPoint}/>
+    {predictionOverlay?.visible && <ImageOverlay url={predictionOverlay.url} bounds={predictionOverlay.bounds} opacity={0.9} />}
+    <MapPosition area={area} selected={selected}/><DrawClicks mode={drawMode} onPoint={onDraftPoint} firstPoint={draftPoints[0]} canClose={draftPoints.length>=3} onClose={onClosePolygon} onHoverClose={setHoveringStart}/>
     {area.polygon&&<Polygon positions={area.polygon} pathOptions={{color:'#9bbcff',fillColor:'#7299ef',fillOpacity:.16,weight:2}} interactive={!drawMode}/>}
-    {draftPoints.length>=2&&<Polyline positions={draftPoints} pathOptions={{color:'#9bbcff',weight:2,dashArray:'6 5'}} interactive={false}/>}
-    {draftPoints.map((point,index)=><CircleMarker key={`draft-${index}`} center={point} radius={8} pathOptions={{color:'#09142c',fillColor:'#a2c2ff',fillOpacity:1,weight:3}} interactive={false}><Popup>Point {index+1}</Popup></CircleMarker>)}
+    {draftPoints.length>=2&&<Polyline positions={hoveringStart&&draftPoints.length>=3?[...draftPoints,draftPoints[0]]:draftPoints} pathOptions={{color:hoveringStart?'#ffffff':'#9bbcff',weight:hoveringStart?3:2,dashArray:'6 5'}} interactive={false}/>}
+    {draftPoints.map((point,index)=><CircleMarker key={`draft-${index}`} center={point} radius={index===0&&hoveringStart?13:8} bubblingMouseEvents={false} pathOptions={{color:index===0&&hoveringStart?'#ffffff':'#09142c',fillColor:index===0&&hoveringStart?'#ffffff':'#a2c2ff',fillOpacity:1,weight:index===0&&hoveringStart?4:3}} interactive={index===0&&draftPoints.length>=3} eventHandlers={index===0&&draftPoints.length>=3?{mouseover:()=>setHoveringStart(true),mouseout:()=>setHoveringStart(false),click:event=>{event.originalEvent?.stopPropagation();onClosePolygon();}}:{}}><Popup>{index===0&&draftPoints.length>=3?'Click the highlighted starting point to close the polygon':`Point ${index+1}`}</Popup></CircleMarker>)}
     {path?.length>1&&<><Polyline positions={path} pathOptions={{color:'#ff9c75',weight:4,dashArray:'8 8'}}/>{path.slice(1).map((point,index)=><CircleMarker key={`path-${index}`} center={point} radius={index===path.length-2?8:5} pathOptions={{color:'#101831',fillColor:'#ffc28e',fillOpacity:1,weight:2}}><Popup>Illustrative position after {index===0?2:index===1?4:24} hours</Popup></CircleMarker>)}</>}
     {visible.map(tile => <CircleMarker key={tile.id} center={[tile.lat,tile.lng]} radius={selected?.id === tile.id ? 15 : 10} interactive={!drawMode} pathOptions={{ color: colors[tile.label], fillColor: colors[tile.label], fillOpacity: 0.8, weight: 3 }} eventHandlers={{click: () => onSelect(tile)}}>
       <Popup><strong>{tile.name}</strong><br/>{tile.label}<br/>Demo confidence: {tile.confidence}%<br/>Fictional observation</Popup>
@@ -61,7 +79,7 @@ function SystemDesign() {
       </React.Fragment>)}
     </div>
     <div className="system-outputs"><div className="output-intro"><p className="eyebrow">WHAT COMES OUT</p><h3>Signals people can act on</h3></div><div className="output-card"><span className="output-icon detection-icon">●</span><div><strong>Detection layer</strong><small>Class · location · confidence</small></div></div><div className="output-card"><span className="output-icon drift-icon">↗</span><div><strong>Drift outlook</strong><small>2h · 4h · 24h scenarios</small></div></div><div className="output-card"><span className="output-icon map-icon">⌖</span><div><strong>Coastal map</strong><small>Area view · possible hotspots</small></div></div></div>
-    <p className="system-footnote">The map currently uses fictional demo observations. This diagram shows the intended research workflow, not a live connected pipeline.</p>
+    <p className="system-footnote">The model layer is an experimental MARIDA preview; the sample observations remain fictional, and Singapore validation is still needed.</p>
   </section>;
 }
 function App() {
@@ -72,6 +90,7 @@ function App() {
   const [timeView,setTimeView] = useState('current');
   const timeLabels = { current: 'Current state', '2': 'Expected in 2 hours', '4': 'Expected in 4 hours', '24': 'Expected in 24 hours' };
   const [selected,setSelected] = useState(null);
+  const [predictionOverlay,setPredictionOverlay] = useState(null);
   const area = areaId==='__drawn__'&&drawnArea ? drawnArea : areas.find(a=>a.id===areaId)||areas[0];
   const visible = tiles.filter(t=>areaId==='all'||(area.polygon?insidePolygon([t.lat,t.lng],area.polygon):t.area===areaId));
   function selectArea(e){const value=e.target.value;setSelected(null);setAreaError('');if(value==='__draw_polygon__'){setAreaName('');setDrawMode('polygon');setDraftPoints([]);setAreaId('all');return;}setDrawMode(null);setDraftPoints([]);setAreaId(value||'all');if(value!=='__drawn__')setDrawnArea(null);}
@@ -89,14 +108,14 @@ function App() {
       <section className="hero"><div className="hero-content"><p className="eyebrow">COASTAL INTELLIGENCE · SINGAPORE</p><h1>A clearer view.<br/>A cleaner coast.</h1><p className="intro">Explore marine litter across Singapore’s coast.<br/>Turn observations into better cleanup decisions.</p><a className="primary" href="#explore">Explore the coast <span>↗</span></a><p className="hero-note">Built for the waters we share.</p></div><div className="ocean" aria-hidden="true"><div className="orbit orbit-one"></div><div className="orbit orbit-two"></div><div className="ocean-label">1.3521° N &nbsp; 103.8198° E<br/><span>SINGAPORE STRAIT</span></div><div className="signal s1"></div><div className="signal s2"></div><div className="signal s3"></div></div></section>
       <section id="explore" className="explore"><div className="section-heading"><div><p className="eyebrow">EXPLORE THE COAST</p><h2>Every observation has a location.</h2></div><p>Choose an area. Explore the map.<br/>Inspect what’s happening along the coast.</p></div>
         <div className="demo-notice"><span className="notice-dot"></span> Demo mode — all observations, confidence scores, and severity levels below are fictional.{timeView!=='current'&&<span> Path preview is illustrative only; it does not use live currents or wind.</span>}</div>
-        <div className="map-shell"><div className="map-toolbar"><div className="field"><label htmlFor="area">Coastal area</label><select id="area" value={drawMode?"__draw_polygon__":areaId==="all"?"":areaId} onChange={selectArea}><option value="">Choose your area</option>{[...areas].filter(a=>a.id!=="all").map(a=><option key={a.id} value={a.id}>{a.name}</option>)}{drawnArea&&<option value="__drawn__">{drawnArea.name}</option>}<option value="__draw_polygon__">Draw polygon…</option></select></div><div className="field"><label htmlFor="time-view">Time view</label><select id="time-view" value={timeView} onChange={selectTime}>{Object.entries(timeLabels).map(([value,label])=><option key={value} value={value}>{label}</option>)}</select></div><div className="map-count"><strong>{visible.length}</strong> demo observations</div><button className="reset" onClick={()=>{setAreaId('all');setTimeView('current');setSelected(null);setDrawMode(null);setDraftPoints([]);setDrawnArea(null);setAreaError('');}}>Reset view ↺</button></div>
-          {drawMode==='polygon'&&<div className="area-tools"><div className="area-entry"><input aria-label="Area name" placeholder="Name this area" value={areaName} onChange={e=>setAreaName(e.target.value)}/><span>{draftPoints.length} point{draftPoints.length===1?'':'s'} · Click on the map to add corners.</span><button className="reset" disabled={!draftPoints.length} onClick={()=>setDraftPoints(v=>v.slice(0,-1))}>Undo last point</button><button className="reset active" disabled={draftPoints.length<3} onClick={finishDrawing}>Finish polygon</button><button className="reset" onClick={()=>{setDrawMode(null);setDraftPoints([]);setDrawnArea(null);setAreaError('');}}>Cancel</button></div>{areaError&&<p className="area-error">{areaError}</p>}</div>}<CoastalMap area={area} selected={selected} visible={visible} onSelect={setSelected} drawMode={drawMode} draftPoints={draftPoints} onDraftPoint={point=>setDraftPoints(v=>[...v,point])} path={path}/>{path&&<p className="path-note">Dashed line shows a demo movement scenario for {selected.id} in the selected time window.</p>}{timeView!=='current'&&!path&&<p className="path-note">Select <b>Trace path</b> on a Marine debris observation to preview where it might drift.</p>}<div className="map-legend">{Object.entries(colors).map(([name,color])=><span key={name}><i style={{background:color}}></i>{name}</span>)}<span className="map-hint">{drawMode?'Click map to add polygon corners':'Select a marker to inspect'}</span></div></div>
+        <div className="map-shell"><div className="map-toolbar"><div className="field"><label htmlFor="area">Choose an area</label><select id="area" value={drawMode?"__draw_polygon__":areaId==="all"?"":areaId} onChange={selectArea}><option value="">Select a place…</option><optgroup label="Named coastal areas">{[...areas].filter(a=>a.id!=="all").map(a=><option key={a.id} value={a.id}>{a.name}</option>)}</optgroup>{drawnArea&&<optgroup label="Your current polygon"><option value="__drawn__">{drawnArea.name}</option></optgroup>}<optgroup label="Custom area"><option value="__draw_polygon__">Draw a polygon…</option></optgroup></select></div><div className="field"><label htmlFor="time-view">Time view</label><select id="time-view" value={timeView} onChange={selectTime}>{Object.entries(timeLabels).map(([value,label])=><option key={value} value={value}>{label}</option>)}</select></div><div className="map-count"><strong>{visible.length}</strong> demo observations</div><button className="reset" onClick={()=>{setAreaId('all');setTimeView('current');setSelected(null);setDrawMode(null);setDraftPoints([]);setDrawnArea(null);setAreaError('');}}>Reset view ↺</button></div>
+          {drawMode==='polygon'&&<div className="area-tools"><div className="area-entry"><input aria-label="Area name" placeholder="Name this area" value={areaName} onChange={e=>setAreaName(e.target.value)}/><span>{draftPoints.length} point{draftPoints.length===1?'':'s'} · Click on the map to add corners{draftPoints.length>=3?' or click the first point to close':''}.</span><button className="reset" disabled={!draftPoints.length} onClick={()=>setDraftPoints(v=>v.slice(0,-1))}>Undo last point</button><button className="reset active" disabled={draftPoints.length<3} onClick={finishDrawing}>Finish polygon</button><button className="reset" onClick={()=>{setDrawMode(null);setDraftPoints([]);setDrawnArea(null);setAreaError('');}}>Cancel</button></div>{areaError&&<p className="area-error">{areaError}</p>}</div>}<CoastalMap area={area} selected={selected} visible={visible} onSelect={setSelected} drawMode={drawMode} draftPoints={draftPoints} onDraftPoint={point=>setDraftPoints(v=>[...v,point])} onClosePolygon={finishDrawing} path={path} predictionOverlay={predictionOverlay}/>{areaId==='__drawn__'&&drawnArea&&<ImageryPreparation polygon={drawnArea.polygon} onPrediction={setPredictionOverlay}/ >}{path&&<p className="path-note">Dashed line shows a demo movement scenario for {selected.id} in the selected time window.</p>}{timeView!=='current'&&!path&&<p className="path-note">Select <b>Trace path</b> on a Marine debris observation to preview where it might drift.</p>}<div className="map-legend">{Object.entries(colors).map(([name,color])=><span key={name}><i style={{background:color}}></i>{name}</span>)}{predictionOverlay?.visible&&<span><i className="prediction-dot"></i>Possible debris · experimental</span>}<span className="map-hint">{drawMode?'Click map to add polygon corners':'Select a marker to inspect'}</span></div></div>
         <div className="results-heading"><h3>Coastal observations <span>{visible.length.toString().padStart(2,'0')}</span></h3><button className="text-button" onClick={exportReport}>Download demo report ↓</button></div>
         <div className="observations">{visible.map(tile=><article key={tile.id} className={`observation ${selected?.id===tile.id?'selected':''}`}><div className="tile-id"><i style={{background:colors[tile.label]}}></i>{tile.id}<span className={`severity ${tile.severity.toLowerCase()}`}>{tile.severity} · demo</span></div><h4>{tile.name}</h4><p>{tile.label}</p><div className="tile-meta"><span>{tile.lat.toFixed(3)}° N, {tile.lng.toFixed(3)}° E</span><span>{tile.confidence}% demo confidence</span></div><button onClick={()=>{setSelected(tile);if(tile.label==='Marine debris'&&timeView==='current')setTimeView('2');document.getElementById('explore').scrollIntoView({behavior:'smooth'});}}>{tile.label==='Marine debris'?'Trace path':'View on map'} <span>↗</span></button></article>)}</div>
         {visible.length===0 && <p className="empty">No demo observations fall inside this area. Try another area or draw a larger polygon.</p>}
       </section>
       <SystemDesign/>
-      <section id="about" className="mission"><p className="eyebrow">OUR MISSION</p><h2>Understand the litter.<br/>Protect the coastline.</h2><p>MarineGuard AI is a student research project exploring how satellite imagery and environmental data can support marine litter detection, future accumulation forecasts, and cleanup planning in Singapore.</p><div className="mission-status">Current stage: frontend prototype. Live data and AI models will be connected in later stages.</div></section>
+      <section id="about" className="mission"><p className="eyebrow">OUR MISSION</p><h2>Understand the litter.<br/>Protect the coastline.</h2><p>MarineGuard AI is a student research project exploring how satellite imagery and environmental data can support marine litter detection, future accumulation forecasts, and cleanup planning in Singapore.</p><div className="mission-status">Current stage: Earth Engine imagery and experimental MARIDA pixel predictions are connected. Singapore validation is still needed.</div></section>
     </main><footer><a href="#" className="brand">MarineGuard<span className="ai">AI</span></a><span>Singapore coastal intelligence</span><span>Research prototype · 2026</span></footer>
   </>;
 }

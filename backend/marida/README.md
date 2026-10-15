@@ -31,6 +31,8 @@ This follows MARIDA's official train/validation patch lists, 11 Sentinel-2 bands
 
 The first RF-SS+SI run produced validation Marine Debris precision **0.866**, recall **0.874**, F1 **0.870**, and IoU **0.770** using 694 training and 328 validation patches. This is an untuned validation result, not a test score; the paper's 0.80 F1 is from its test evaluation, so the two scores are not directly comparable. The serialized model is in `checkpoints/rf_ss_si.joblib`; metrics are in `outputs/rf_ss_si_val_metrics.json`.
 
+The saved Random Forest was created with scikit-learn **1.6.1**. Keep that version when loading the checkpoint; it is pinned in `backend/requirements.txt`. Use Python 3.12 as described in the backend setup.
+
 ## ResNet experiment
 
 A 10-epoch ResNet-style pixel segmenter using the same train/validation splits scored Marine Debris F1 **0.058** (precision **0.524**, recall **0.031**), below RF-SS+SI's **0.870** on that validation split. It did not outperform the Random Forest in this first run. This is an initial CPU run with a small model, so treat it as an experiment rather than a tuned ResNet comparison. We did not use the official test split. Weights and epoch metrics are saved as `checkpoints/resnet_segmentation.pt` and `outputs/resnet_segmentation_val_metrics.json`.
@@ -44,3 +46,17 @@ We screened nine settings for residual depth, width, dropout, learning rate, wei
 - [MARIDA paper](https://doi.org/10.1371/journal.pone.0262247)
 - [Official project repository](https://github.com/marine-debris/marine-debris.github.io)
 - [MARIDA dataset on Zenodo](https://zenodo.org/records/5151941)
+
+## Predict possible debris in an Earth Engine tile
+
+After an export finishes, download one 11-band tile from Google Drive. From the repository root, run:
+
+```sh
+python -m backend.marida.scripts.predict_tile path/to/downloaded_tile.tif
+```
+
+The command preprocesses the tile into 19 inputs per pixel, runs `checkpoints/rf_ss_si.joblib`, and writes a georeferenced `*_debris_mask.tif` beside the input. Mask values are **1 = model flagged possible debris**, **0 = not flagged**, and **255 = no usable satellite data**. Use `--output path/to/mask.tif` to choose where it is saved.
+
+The model was trained on MARIDA imagery, not Singapore. Treat these marks as an experiment until we validate the inputs and predictions against Singapore observations; the reported validation F1 is from MARIDA only. The input tile must use the same 11-band order and 0–1 reflectance scale as the training data.
+
+The website can also send a downloaded tile to `POST /api/predictions/tile`; the backend returns the marked-pixel count and a map overlay. Upload limit is 20 MB per tile. The red overlay is experimental and should not be presented as a confirmed debris hotspot.

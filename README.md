@@ -11,7 +11,7 @@ A student project exploring marine litter around Singapore’s coast.
 
 ## Current stage
 
-Frontend prototype implemented with a Singapore map, Singapore wide view, a Coastal area dropdown with polygon drawing, time controls, observation cards, and demo report export. All displayed observations are fictional. No backend APIs, AI models, or data integrations have been implemented.
+The frontend supports selecting a coastal area and drawing a polygon. The backend can fetch Sentinel-2 imagery through Google Earth Engine, preview the processed image, and export tiles. A downloaded tile can be sent through the backend to run the MARIDA model and display an experimental possible-debris pixel layer on the map.
 
 ## Folder structure
 
@@ -24,14 +24,13 @@ README.md    Project overview and setup
 
 ## Getting started
 
-Requires Python 3.9 or newer. No external packages are needed yet.
+Use Python 3.12 for the backend environment. The Random Forest checkpoint uses scikit-learn 1.6.1, which supports Python 3.9–3.13; Python 3.12 is the recommended setup. See the [scikit-learn install guide](https://scikit-learn.org/1.6/install.html).
 
 ```sh
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
+python -m pip install -r backend/requirements.txt
 python -m backend.app.main
 ```
 
-The starter prints a project message. Next, we will choose a small dataset and begin exploring it.
-
-See [frontend setup](frontend/README.md) and [backend setup](backend/README.md) for details. The frontend now uses React, Vite, and Leaflet. Backend dependencies will be added as required.
+For the website, see [frontend setup](frontend/README.md). Backend setup and Earth Engine authentication are in [backend setup](backend/README.md).

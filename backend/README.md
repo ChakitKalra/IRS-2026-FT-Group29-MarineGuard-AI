@@ -9,12 +9,16 @@ The initial experiment compares the three strongest MARIDA Random Forest feature
 
 ## Setup
 
-From the repository root, with Python 3.9 or newer:
+From the repository root, use Python 3.12. The saved MARIDA Random Forest checkpoint was created with scikit-learn 1.6.1, so `backend/requirements.txt` pins that version to avoid loading the model with a different scikit-learn release.
 
 ```sh
-python3 -m venv .venv
+python3.12 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r backend/requirements.txt
 ```
 
-The existing `python -m backend.app.main` entry point remains a minimal app placeholder. MARIDA training is run with `python -m backend.marida.scripts.train_rf_ss_si`.
+MARIDA training is run with `python -m backend.marida.scripts.train_rf_ss_si`. To mark possible debris pixels in a downloaded Earth Engine tile, use `python -m backend.marida.scripts.predict_tile path/to/tile.tif`; the website also accepts one downloaded tile and displays the experimental pixel layer on the map. See [`marida/README.md`](marida/README.md) for the mask values and limits.
+
+## Earth Engine imagery pipeline
+
+The backend can prepare Sentinel-2 imagery for a selected polygon, return a true-colour preview, export 256×256 tiles to the authenticated Google Drive, and report export task status. Setup and verification instructions are in [`earth_engine/README.md`](earth_engine/README.md). This pipeline prepares imagery only; it does not run model inference.
