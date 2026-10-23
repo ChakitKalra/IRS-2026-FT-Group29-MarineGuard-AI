@@ -1,0 +1,2606 @@
+{
+  "status": "success",
+  "phase": "Phase 2: Oceanographic & Environmental Data Engine",
+  "timestamp": "2026-10-19T14:29:00+08:00",
+  "meteorological_summary": {
+    "timestamp": "2026-10-19T14:29:00+08:00",
+    "active_wind_stations": 18,
+    "active_rain_stations": 90,
+    "avg_wind_speed_knots": 6.0,
+    "avg_wind_speed_ms": 3.11,
+    "dominant_wind_direction_from_deg": 156.0,
+    "dominant_wind_direction_towards_deg": 336.0,
+    "island_max_rainfall_mm_hr": 0.0,
+    "island_avg_rainfall_mm_hr": 0.0,
+    "inland_flushing_risk": "Low",
+    "inland_flushing_rationale": "Dry or light conditions. Inland runoff minimal (~3% baseline per NEA marine litter study).",
+    "stations": [
+      {
+        "station_id": "S108",
+        "station_name": "Marina Barrage",
+        "latitude": 1.2799,
+        "longitude": 103.8703,
+        "wind_speed_knots": 5.8,
+        "wind_speed_ms": 2.98,
+        "wind_direction_from_deg": 204.0,
+        "wind_direction_towards_deg": 24.0,
+        "wind_u_ms": 1.214,
+        "wind_v_ms": 2.726,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S109",
+        "station_name": "Ang Mo Kio Avenue 5",
+        "latitude": 1.3793,
+        "longitude": 103.85,
+        "wind_speed_knots": 4.8,
+        "wind_speed_ms": 2.47,
+        "wind_direction_from_deg": 127.0,
+        "wind_direction_towards_deg": 307.0,
+        "wind_u_ms": -1.972,
+        "wind_v_ms": 1.486,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S106",
+        "station_name": "Jalan Noordin (Pulau Ubin)",
+        "latitude": 1.4168,
+        "longitude": 103.9673,
+        "wind_speed_knots": 4.7,
+        "wind_speed_ms": 2.42,
+        "wind_direction_from_deg": 142.0,
+        "wind_direction_towards_deg": 322.0,
+        "wind_u_ms": -1.489,
+        "wind_v_ms": 1.905,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S117",
+        "station_name": "Banyan Road (Jurong Island)",
+        "latitude": 1.2542,
+        "longitude": 103.6741,
+        "wind_speed_knots": 6.2,
+        "wind_speed_ms": 3.19,
+        "wind_direction_from_deg": 217.0,
+        "wind_direction_towards_deg": 37.0,
+        "wind_u_ms": 1.92,
+        "wind_v_ms": 2.547,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S107",
+        "station_name": "East Coast Park",
+        "latitude": 1.3133,
+        "longitude": 103.962,
+        "wind_speed_knots": 5.8,
+        "wind_speed_ms": 2.98,
+        "wind_direction_from_deg": 76.0,
+        "wind_direction_towards_deg": 256.0,
+        "wind_u_ms": -2.895,
+        "wind_v_ms": -0.722,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S104",
+        "station_name": "Woodlands Avenue 9",
+        "latitude": 1.4439,
+        "longitude": 103.7854,
+        "wind_speed_knots": 5.6,
+        "wind_speed_ms": 2.88,
+        "wind_direction_from_deg": 156.0,
+        "wind_direction_towards_deg": 336.0,
+        "wind_u_ms": -1.172,
+        "wind_v_ms": 2.632,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S115",
+        "station_name": "Tuas South Avenue 3",
+        "latitude": 1.2938,
+        "longitude": 103.6184,
+        "wind_speed_knots": 4.4,
+        "wind_speed_ms": 2.26,
+        "wind_direction_from_deg": 182.0,
+        "wind_direction_towards_deg": 2.0,
+        "wind_u_ms": 0.079,
+        "wind_v_ms": 2.262,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S116",
+        "station_name": "Pasir Panjang Terminal",
+        "latitude": 1.2824,
+        "longitude": 103.7545,
+        "wind_speed_knots": 6.6,
+        "wind_speed_ms": 3.4,
+        "wind_direction_from_deg": 174.0,
+        "wind_direction_towards_deg": 354.0,
+        "wind_u_ms": -0.355,
+        "wind_v_ms": 3.377,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S102",
+        "station_name": "Semakau Island",
+        "latitude": 1.1902,
+        "longitude": 103.7657,
+        "wind_speed_knots": 7.6,
+        "wind_speed_ms": 3.91,
+        "wind_direction_from_deg": 63.0,
+        "wind_direction_towards_deg": 243.0,
+        "wind_u_ms": -3.484,
+        "wind_v_ms": -1.775,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S60",
+        "station_name": "Artillery Avenue (Sentosa)",
+        "latitude": 1.2504,
+        "longitude": 103.8275,
+        "wind_speed_knots": 2.8,
+        "wind_speed_ms": 1.44,
+        "wind_direction_from_deg": 63.0,
+        "wind_direction_towards_deg": 243.0,
+        "wind_u_ms": -1.283,
+        "wind_v_ms": -0.654,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S50",
+        "station_name": "Clementi Road",
+        "latitude": 1.3318,
+        "longitude": 103.7762,
+        "wind_speed_knots": 4.7,
+        "wind_speed_ms": 2.42,
+        "wind_direction_from_deg": 128.0,
+        "wind_direction_towards_deg": 308.0,
+        "wind_u_ms": -1.905,
+        "wind_v_ms": 1.489,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S44",
+        "station_name": "Nanyang Avenue",
+        "latitude": 1.3458,
+        "longitude": 103.6817,
+        "wind_speed_knots": 4.9,
+        "wind_speed_ms": 2.52,
+        "wind_direction_from_deg": 203.0,
+        "wind_direction_towards_deg": 23.0,
+        "wind_u_ms": 0.985,
+        "wind_v_ms": 2.32,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S43",
+        "station_name": "Kim Chuan Road",
+        "latitude": 1.3406,
+        "longitude": 103.8882,
+        "wind_speed_knots": 4.0,
+        "wind_speed_ms": 2.06,
+        "wind_direction_from_deg": 205.0,
+        "wind_direction_towards_deg": 25.0,
+        "wind_u_ms": 0.87,
+        "wind_v_ms": 1.865,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S23",
+        "station_name": "Tengah Meteorological Station",
+        "latitude": 1.3858,
+        "longitude": 103.7119,
+        "wind_speed_knots": 7.2,
+        "wind_speed_ms": 3.7,
+        "wind_direction_from_deg": 205.0,
+        "wind_direction_towards_deg": 25.0,
+        "wind_u_ms": 1.565,
+        "wind_v_ms": 3.357,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S06",
+        "station_name": "Paya Lebar Meteorological Station",
+        "latitude": 1.357,
+        "longitude": 103.904,
+        "wind_speed_knots": 9.1,
+        "wind_speed_ms": 4.68,
+        "wind_direction_from_deg": 167.0,
+        "wind_direction_towards_deg": 347.0,
+        "wind_u_ms": -1.053,
+        "wind_v_ms": 4.561,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S111",
+        "station_name": "Scotts Road",
+        "latitude": 1.3106,
+        "longitude": 103.8365,
+        "wind_speed_knots": 8.9,
+        "wind_speed_ms": 4.58,
+        "wind_direction_from_deg": 60.0,
+        "wind_direction_towards_deg": 240.0,
+        "wind_u_ms": -3.965,
+        "wind_v_ms": -2.289,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S199",
+        "station_name": "S199",
+        "latitude": 1.3678,
+        "longitude": 103.9823,
+        "wind_speed_knots": 9.9,
+        "wind_speed_ms": 5.09,
+        "wind_direction_from_deg": 150.0,
+        "wind_direction_towards_deg": 330.0,
+        "wind_u_ms": -2.546,
+        "wind_v_ms": 4.411,
+        "rainfall_5min_mm": null,
+        "rainfall_rate_mm_hr": null
+      },
+      {
+        "station_id": "S121",
+        "station_name": "Old Choa Chu Kang Road",
+        "latitude": 1.3738,
+        "longitude": 103.7217,
+        "wind_speed_knots": 5.8,
+        "wind_speed_ms": 2.98,
+        "wind_direction_from_deg": 202.0,
+        "wind_direction_towards_deg": 22.0,
+        "wind_u_ms": 1.118,
+        "wind_v_ms": 2.767,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S218",
+        "station_name": "Bukit Batok Street 34",
+        "latitude": 1.36491,
+        "longitude": 103.75065,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S219",
+        "station_name": "Yio Chu Kang Road",
+        "latitude": 1.37998,
+        "longitude": 103.87639,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S216",
+        "station_name": "Ang Mo Kio Avenue 10",
+        "latitude": 1.36019,
+        "longitude": 103.85335,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S217",
+        "station_name": "Bishan Street 13",
+        "latitude": 1.35028,
+        "longitude": 103.855,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S214",
+        "station_name": "Tanjong Rhu",
+        "latitude": 1.29911,
+        "longitude": 103.88289,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S215",
+        "station_name": "Geylang East Central",
+        "latitude": 1.31944,
+        "longitude": 103.88194,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S213",
+        "station_name": "Coronation Walk",
+        "latitude": 1.32427,
+        "longitude": 103.8097,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S80",
+        "station_name": "Sembawang Meteorological Station",
+        "latitude": 1.4247,
+        "longitude": 103.8201,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S81",
+        "station_name": "Punggol Central",
+        "latitude": 1.4028,
+        "longitude": 103.9095,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S40",
+        "station_name": "Mandai Lake Road",
+        "latitude": 1.4067,
+        "longitude": 103.7832,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S84",
+        "station_name": "Tampines Avenue 5",
+        "latitude": 1.3443,
+        "longitude": 103.9441,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S180",
+        "station_name": "Taman Jurong Greens",
+        "latitude": 1.33701,
+        "longitude": 103.71828,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S88",
+        "station_name": "Toa Payoh North",
+        "latitude": 1.3417,
+        "longitude": 103.8515,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S100",
+        "station_name": "Sungei Kadut Street 3",
+        "latitude": 1.4172,
+        "longitude": 103.74855,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S221",
+        "station_name": "Hougang Avenue 1",
+        "latitude": 1.35691,
+        "longitude": 103.89088,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S222",
+        "station_name": "Henderson Road",
+        "latitude": 1.28987,
+        "longitude": 103.82364,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S08",
+        "station_name": "Lower Peirce Reservoir",
+        "latitude": 1.37,
+        "longitude": 103.8271,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S07",
+        "station_name": "Macritchie Reservoir",
+        "latitude": 1.3418,
+        "longitude": 103.8339,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S187",
+        "station_name": "Coronation Road",
+        "latitude": 1.32251,
+        "longitude": 103.80139,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S220",
+        "station_name": "Compassvale Lane",
+        "latitude": 1.38666,
+        "longitude": 103.89797,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S184",
+        "station_name": "Sengkang East Avenue",
+        "latitude": 1.38256,
+        "longitude": 103.89852,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S208",
+        "station_name": "Changi East Close",
+        "latitude": 1.31363,
+        "longitude": 104.00317,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S129",
+        "station_name": "Bedok Stadium",
+        "latitude": 1.32575,
+        "longitude": 103.93969,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S203",
+        "station_name": "Pasir Panjang Road",
+        "latitude": 1.29164,
+        "longitude": 103.7702,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S127",
+        "station_name": "Kallang Practice Track",
+        "latitude": 1.30574,
+        "longitude": 103.87817,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S201",
+        "station_name": "Sunset Way",
+        "latitude": 1.32319,
+        "longitude": 103.76714,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S90",
+        "station_name": "Bukit Timah Road",
+        "latitude": 1.3191,
+        "longitude": 103.8193,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S92",
+        "station_name": "South Buona Vista Road",
+        "latitude": 1.2841,
+        "longitude": 103.7888,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S209",
+        "station_name": "Yishun Ring Road",
+        "latitude": 1.42111,
+        "longitude": 103.84472,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S94",
+        "station_name": "Pasir Ris Street 51",
+        "latitude": 1.3679,
+        "longitude": 103.9489,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S210",
+        "station_name": "Woodlands Centre Road",
+        "latitude": 1.44003,
+        "longitude": 103.76904,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S211",
+        "station_name": "Kranji Road",
+        "latitude": 1.42918,
+        "longitude": 103.75711,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S132",
+        "station_name": "Jurong West Stadium",
+        "latitude": 1.33786,
+        "longitude": 103.69538,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S119",
+        "station_name": "Nicoll Highway",
+        "latitude": 1.295,
+        "longitude": 103.8622,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S113",
+        "station_name": "Marine Parade Road",
+        "latitude": 1.305,
+        "longitude": 103.9112,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S114",
+        "station_name": "Choa Chu Kang Avenue 4",
+        "latitude": 1.3821,
+        "longitude": 103.7381,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S64",
+        "station_name": "Bukit Panjang Road",
+        "latitude": 1.3823,
+        "longitude": 103.7607,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S66",
+        "station_name": "Kranji Reservoir",
+        "latitude": 1.4387,
+        "longitude": 103.736,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S24",
+        "station_name": "Changi Meteorological Station",
+        "latitude": 1.3678,
+        "longitude": 103.9823,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S69",
+        "station_name": "Upper Peirce Reservoir Park",
+        "latitude": 1.3704,
+        "longitude": 103.8046,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S123",
+        "station_name": "Towner Road",
+        "latitude": 1.3214,
+        "longitude": 103.8577,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S120",
+        "station_name": "Botanic Garden",
+        "latitude": 1.3087,
+        "longitude": 103.818,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S229",
+        "station_name": "Jurong West Street 42",
+        "latitude": 1.35167,
+        "longitude": 103.72195,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S306",
+        "station_name": "Murnane Service Reservoir",
+        "latitude": 1.35085,
+        "longitude": 103.78596,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S900",
+        "station_name": "Seletar Meteorological Station",
+        "latitude": 1.4114,
+        "longitude": 103.8627,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S307",
+        "station_name": "Pulau Tekong Reservoir",
+        "latitude": 1.41076,
+        "longitude": 104.04156,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S227",
+        "station_name": "Woodlands Drive 62",
+        "latitude": 1.43944,
+        "longitude": 103.80389,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S228",
+        "station_name": "Jurong West Street 73",
+        "latitude": 1.34703,
+        "longitude": 103.70073,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S305",
+        "station_name": "Sarimbum Reservoir",
+        "latitude": 1.4216,
+        "longitude": 103.68127,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S148",
+        "station_name": "Pasir Ris Walk",
+        "latitude": 1.3715,
+        "longitude": 103.9642,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S302",
+        "station_name": "Tengeh Reservoir",
+        "latitude": 1.33813,
+        "longitude": 103.66303,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S226",
+        "station_name": "Malan Road",
+        "latitude": 1.27472,
+        "longitude": 103.80389,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S303",
+        "station_name": "Ponyan Reservoir",
+        "latitude": 1.38375,
+        "longitude": 103.65817,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S223",
+        "station_name": "Margaret Drive",
+        "latitude": 1.29984,
+        "longitude": 103.80264,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S300",
+        "station_name": "Bedok Reservoir",
+        "latitude": 1.34301,
+        "longitude": 103.91971,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S224",
+        "station_name": "Airport Boulevard",
+        "latitude": 1.34394,
+        "longitude": 103.98386,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S301",
+        "station_name": "Neo Tiew Lane 2",
+        "latitude": 1.41532,
+        "longitude": 103.72871,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S908",
+        "station_name": "Fernvale Lane",
+        "latitude": 1.39027,
+        "longitude": 103.87412,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S909",
+        "station_name": "Seraya Road",
+        "latitude": 1.30568,
+        "longitude": 103.90093,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S907",
+        "station_name": "Rivervale Drive",
+        "latitude": 1.39316,
+        "longitude": 103.87412,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S71",
+        "station_name": "Kent Ridge Road",
+        "latitude": 1.2923,
+        "longitude": 103.7815,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S904",
+        "station_name": "Holland Grove Road",
+        "latitude": 1.31622,
+        "longitude": 103.7837,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S905",
+        "station_name": "Hillcrest Road",
+        "latitude": 1.3308,
+        "longitude": 103.8045,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S308",
+        "station_name": "Seletar Reservoir",
+        "latitude": 1.40158,
+        "longitude": 103.80814,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S902",
+        "station_name": "Yishun Walk",
+        "latitude": 1.41457,
+        "longitude": 103.83106,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S903",
+        "station_name": "Lorong Kismis",
+        "latitude": 1.33742,
+        "longitude": 103.76699,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S33",
+        "station_name": "Jurong Pier Road",
+        "latitude": 1.3082,
+        "longitude": 103.71,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S77",
+        "station_name": "Alexandra Road",
+        "latitude": 1.2937,
+        "longitude": 103.8127,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S35",
+        "station_name": "Old Toh Tuck Road",
+        "latitude": 1.3325,
+        "longitude": 103.755,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S79",
+        "station_name": "Somerset Road",
+        "latitude": 1.3003,
+        "longitude": 103.8372,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S78",
+        "station_name": "Poole Road",
+        "latitude": 1.307,
+        "longitude": 103.8907,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S112",
+        "station_name": "Lim Chu Kang Road",
+        "latitude": 1.4388,
+        "longitude": 103.7017,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      },
+      {
+        "station_id": "S230",
+        "station_name": "West Coast Road",
+        "latitude": 1.30167,
+        "longitude": 103.76444,
+        "wind_speed_knots": null,
+        "wind_speed_ms": null,
+        "wind_direction_from_deg": null,
+        "wind_direction_towards_deg": null,
+        "wind_u_ms": null,
+        "wind_v_ms": null,
+        "rainfall_5min_mm": 0.0,
+        "rainfall_rate_mm_hr": 0.0
+      }
+    ]
+  },
+  "ocean_current_summary": {
+    "source_model": "Singapore Strait Hydrodynamic Physics (M2 Tidal Calibration)",
+    "tidal_stage": "Ebb (Westward to Malacca Strait)",
+    "mean_speed_knots": 1.04,
+    "dominant_heading_deg": 248.0,
+    "grid_points_count": 63
+  },
+  "coastal_sectors_drift": [
+    {
+      "sector": "East Coast Park",
+      "coordinates": [
+        1.303,
+        103.933
+      ],
+      "current": {
+        "speed_knots": 1.1,
+        "speed_ms": 0.568,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 3.7,
+        "speed_ms": 1.93,
+        "heading_towards_deg": 302.8
+      },
+      "combined_drift": {
+        "speed_knots": 1.15,
+        "speed_ms": 0.591,
+        "heading_deg": 251.1,
+        "current_contribution_pct": 93.6,
+        "wind_contribution_pct": 6.4
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Pasir Ris Shoreline",
+      "coordinates": [
+        1.383,
+        103.953
+      ],
+      "current": {
+        "speed_knots": 0.71,
+        "speed_ms": 0.365,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 6.3,
+        "speed_ms": 3.25,
+        "heading_towards_deg": 328.6
+      },
+      "combined_drift": {
+        "speed_knots": 0.74,
+        "speed_ms": 0.381,
+        "heading_deg": 257.6,
+        "current_contribution_pct": 84.9,
+        "wind_contribution_pct": 15.1
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Sentosa / Southern Islands",
+      "coordinates": [
+        1.25,
+        103.831
+      ],
+      "current": {
+        "speed_knots": 1.48,
+        "speed_ms": 0.763,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 2.8,
+        "speed_ms": 1.42,
+        "heading_towards_deg": 244.2
+      },
+      "combined_drift": {
+        "speed_knots": 1.54,
+        "speed_ms": 0.791,
+        "heading_deg": 247.9,
+        "current_contribution_pct": 96.4,
+        "wind_contribution_pct": 3.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Singapore Strait Fairway",
+      "coordinates": [
+        1.2,
+        103.88
+      ],
+      "current": {
+        "speed_knots": 1.48,
+        "speed_ms": 0.761,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 2.8,
+        "speed_ms": 1.43,
+        "heading_towards_deg": 315.2
+      },
+      "combined_drift": {
+        "speed_knots": 1.5,
+        "speed_ms": 0.773,
+        "heading_deg": 249.9,
+        "current_contribution_pct": 96.4,
+        "wind_contribution_pct": 3.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Marina Barrage Estuary",
+      "coordinates": [
+        1.2799,
+        103.8703
+      ],
+      "current": {
+        "speed_knots": 1.23,
+        "speed_ms": 0.63,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 5.8,
+        "speed_ms": 2.98,
+        "heading_towards_deg": 24.0
+      },
+      "combined_drift": {
+        "speed_knots": 1.14,
+        "speed_ms": 0.589,
+        "heading_deg": 252.0,
+        "current_contribution_pct": 91.4,
+        "wind_contribution_pct": 8.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Tuas Marine Basin",
+      "coordinates": [
+        1.285,
+        103.65
+      ],
+      "current": {
+        "speed_knots": 1.18,
+        "speed_ms": 0.608,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 4.5,
+        "speed_ms": 2.32,
+        "heading_towards_deg": 12.8
+      },
+      "combined_drift": {
+        "speed_knots": 1.13,
+        "speed_ms": 0.583,
+        "heading_deg": 251.7,
+        "current_contribution_pct": 92.9,
+        "wind_contribution_pct": 7.1
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    }
+  ],
+  "currents_geojson": {
+    "type": "FeatureCollection",
+    "metadata": {
+      "timestamp": "2026-10-19T06:31:48.616861+00:00",
+      "model": "Singapore Strait Hydrodynamic Physics (M2 Tidal Calibration)",
+      "mean_speed_knots": 1.04,
+      "dominant_heading_deg": 248.0,
+      "tidal_stage": "Ebb (Westward to Malacca Strait)",
+      "total_grid_points": 63
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "CURRENT-001",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-002",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-003",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-004",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-005",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-006",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-007",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-008",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-009",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-010",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-011",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-012",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-013",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-014",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-015",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-016",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-017",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-018",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-019",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-020",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-021",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-022",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-023",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-024",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-025",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-026",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-027",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-028",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-029",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-030",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-031",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-032",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-033",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-034",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-035",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-036",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-037",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-038",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-039",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-040",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-041",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-042",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-043",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-044",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-045",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-046",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-047",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-048",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-049",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-050",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-051",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-052",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-053",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-054",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-055",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-056",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-057",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-058",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-059",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-060",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-061",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-062",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-063",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      }
+    ]
+  }
+}

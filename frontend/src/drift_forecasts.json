@@ -1,0 +1,2198 @@
+{
+  "status": "success",
+  "phase": "Phase 3: Lagrangian Transport & Hotspot Forecasting Engine",
+  "simulation_parameters": {
+    "integrator": "Runge-Kutta 4th Order (RK4)",
+    "time_step_seconds": 300.0,
+    "diffusion_kh_m2_s": 2.5,
+    "default_windage_leeway": 0.02,
+    "total_virtual_particles": 120
+  },
+  "horizons": {
+    "2": {
+      "horizon_hours": 2,
+      "total_particles": 120,
+      "beached_percentage": 50.0,
+      "top_impacted_shores": {
+        "Pasir Ris Beach & Estuary": 30,
+        "Sentosa & Southern Islands": 30
+      },
+      "hotspots": [
+        {
+          "forecast_id": "FC-2H-HS-EAST-01",
+          "origin_hotspot_id": "HS-EAST-01",
+          "origin_sector": "east_coast",
+          "horizon_hours": 2,
+          "predicted_lat": 1.29399,
+          "predicted_lng": 103.90603,
+          "status": "Floating Plume",
+          "target_shore": null,
+          "beached_probability_pct": 0.0,
+          "predicted_items": 324,
+          "risk_level": "Low",
+          "trajectory_points": [
+            [
+              1.30478,
+              103.94282
+            ],
+            [
+              1.30416,
+              103.93874
+            ],
+            [
+              1.30248,
+              103.93398
+            ],
+            [
+              1.30122,
+              103.92876
+            ],
+            [
+              1.30008,
+              103.92372
+            ],
+            [
+              1.29782,
+              103.91942
+            ],
+            [
+              1.29598,
+              103.91404
+            ],
+            [
+              1.29355,
+              103.90908
+            ],
+            [
+              1.29288,
+              103.90477
+            ],
+            [
+              1.29399,
+              103.90603
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-2H-HS-EAST-02",
+          "origin_hotspot_id": "HS-EAST-02",
+          "origin_sector": "east_coast",
+          "horizon_hours": 2,
+          "predicted_lat": 1.29127,
+          "predicted_lng": 103.89258,
+          "status": "Floating Plume",
+          "target_shore": null,
+          "beached_probability_pct": 0.0,
+          "predicted_items": 2,
+          "risk_level": "Low",
+          "trajectory_points": [
+            [
+              1.30254,
+              103.92879
+            ],
+            [
+              1.30192,
+              103.92432
+            ],
+            [
+              1.29982,
+              103.92008
+            ],
+            [
+              1.29818,
+              103.91511
+            ],
+            [
+              1.29635,
+              103.91022
+            ],
+            [
+              1.29551,
+              103.90581
+            ],
+            [
+              1.29411,
+              103.90151
+            ],
+            [
+              1.2923,
+              103.89636
+            ],
+            [
+              1.29064,
+              103.89205
+            ],
+            [
+              1.29127,
+              103.89258
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-2H-HS-PASI-03",
+          "origin_hotspot_id": "HS-PASI-03",
+          "origin_sector": "pasir_ris_changi",
+          "horizon_hours": 2,
+          "predicted_lat": 1.38146,
+          "predicted_lng": 103.95213,
+          "status": "Beached Accumulation",
+          "target_shore": "Pasir Ris Beach & Estuary",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 4,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.38131,
+              103.95372
+            ],
+            [
+              1.38141,
+              103.95317
+            ],
+            [
+              1.38146,
+              103.95213
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-2H-HS-SOUT-04",
+          "origin_hotspot_id": "HS-SOUT-04",
+          "origin_sector": "southern_islands",
+          "horizon_hours": 2,
+          "predicted_lat": 1.2505,
+          "predicted_lng": 103.82702,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 2,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.25117,
+              103.82899
+            ],
+            [
+              1.25037,
+              103.82789
+            ],
+            [
+              1.2505,
+              103.82702
+            ]
+          ]
+        }
+      ],
+      "geojson": {
+        "type": "FeatureCollection",
+        "metadata": {
+          "horizon_hours": 2,
+          "beached_percentage": 50.0,
+          "top_impacted_shores": {
+            "Pasir Ris Beach & Estuary": 30,
+            "Sentosa & Southern Islands": 30
+          },
+          "total_forecasted_hotspots": 4
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "id": "FC-2H-HS-EAST-01",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.90603,
+                1.29399
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 2,
+              "status": "Floating Plume",
+              "target_shore": null,
+              "beached_probability_pct": 0.0,
+              "predicted_items": 324,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-2H-HS-EAST-01",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.94282,
+                  1.30478
+                ],
+                [
+                  103.93874,
+                  1.30416
+                ],
+                [
+                  103.93398,
+                  1.30248
+                ],
+                [
+                  103.92876,
+                  1.30122
+                ],
+                [
+                  103.92372,
+                  1.30008
+                ],
+                [
+                  103.91942,
+                  1.29782
+                ],
+                [
+                  103.91404,
+                  1.29598
+                ],
+                [
+                  103.90908,
+                  1.29355
+                ],
+                [
+                  103.90477,
+                  1.29288
+                ],
+                [
+                  103.90603,
+                  1.29399
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 2,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-2H-HS-EAST-02",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.89258,
+                1.29127
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 2,
+              "status": "Floating Plume",
+              "target_shore": null,
+              "beached_probability_pct": 0.0,
+              "predicted_items": 2,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-2H-HS-EAST-02",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.92879,
+                  1.30254
+                ],
+                [
+                  103.92432,
+                  1.30192
+                ],
+                [
+                  103.92008,
+                  1.29982
+                ],
+                [
+                  103.91511,
+                  1.29818
+                ],
+                [
+                  103.91022,
+                  1.29635
+                ],
+                [
+                  103.90581,
+                  1.29551
+                ],
+                [
+                  103.90151,
+                  1.29411
+                ],
+                [
+                  103.89636,
+                  1.2923
+                ],
+                [
+                  103.89205,
+                  1.29064
+                ],
+                [
+                  103.89258,
+                  1.29127
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 2,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-2H-HS-PASI-03",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.95213,
+                1.38146
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 2,
+              "status": "Beached Accumulation",
+              "target_shore": "Pasir Ris Beach & Estuary",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 4,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-2H-HS-PASI-03",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.95372,
+                  1.38131
+                ],
+                [
+                  103.95317,
+                  1.38141
+                ],
+                [
+                  103.95213,
+                  1.38146
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-2H-HS-SOUT-04",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.82702,
+                1.2505
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 2,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-2H-HS-SOUT-04",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.82899,
+                  1.25117
+                ],
+                [
+                  103.82789,
+                  1.25037
+                ],
+                [
+                  103.82702,
+                  1.2505
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-2H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 2,
+              "risk_level": "High"
+            }
+          }
+        ]
+      }
+    },
+    "6": {
+      "horizon_hours": 6,
+      "total_particles": 120,
+      "beached_percentage": 57.5,
+      "top_impacted_shores": {
+        "Sentosa & Southern Islands": 39,
+        "Pasir Ris Beach & Estuary": 30
+      },
+      "hotspots": [
+        {
+          "forecast_id": "FC-6H-HS-EAST-01",
+          "origin_hotspot_id": "HS-EAST-01",
+          "origin_sector": "east_coast",
+          "horizon_hours": 6,
+          "predicted_lat": 1.26826,
+          "predicted_lng": 103.83131,
+          "status": "Floating Plume",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 3.3,
+          "predicted_items": 324,
+          "risk_level": "Low",
+          "trajectory_points": [
+            [
+              1.30478,
+              103.94282
+            ],
+            [
+              1.30122,
+              103.92876
+            ],
+            [
+              1.29598,
+              103.91404
+            ],
+            [
+              1.29082,
+              103.89982
+            ],
+            [
+              1.28645,
+              103.88547
+            ],
+            [
+              1.28358,
+              103.87202
+            ],
+            [
+              1.27898,
+              103.8606
+            ],
+            [
+              1.27502,
+              103.84613
+            ],
+            [
+              1.26971,
+              103.8281
+            ],
+            [
+              1.26826,
+              103.83131
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-6H-HS-EAST-02",
+          "origin_hotspot_id": "HS-EAST-02",
+          "origin_sector": "east_coast",
+          "horizon_hours": 6,
+          "predicted_lat": 1.26487,
+          "predicted_lng": 103.8178,
+          "status": "Floating Plume",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 26.7,
+          "predicted_items": 2,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30254,
+              103.92879
+            ],
+            [
+              1.29879,
+              103.91672
+            ],
+            [
+              1.29523,
+              103.9042
+            ],
+            [
+              1.29064,
+              103.89205
+            ],
+            [
+              1.28505,
+              103.87917
+            ],
+            [
+              1.27916,
+              103.86708
+            ],
+            [
+              1.27528,
+              103.85379
+            ],
+            [
+              1.26949,
+              103.84037
+            ],
+            [
+              1.26458,
+              103.82749
+            ],
+            [
+              1.26487,
+              103.8178
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-6H-HS-PASI-03",
+          "origin_hotspot_id": "HS-PASI-03",
+          "origin_sector": "pasir_ris_changi",
+          "horizon_hours": 6,
+          "predicted_lat": 1.38146,
+          "predicted_lng": 103.95213,
+          "status": "Beached Accumulation",
+          "target_shore": "Pasir Ris Beach & Estuary",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 4,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.38131,
+              103.95372
+            ],
+            [
+              1.38141,
+              103.95317
+            ],
+            [
+              1.38146,
+              103.95213
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-6H-HS-SOUT-04",
+          "origin_hotspot_id": "HS-SOUT-04",
+          "origin_sector": "southern_islands",
+          "horizon_hours": 6,
+          "predicted_lat": 1.2505,
+          "predicted_lng": 103.82702,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 2,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.25117,
+              103.82899
+            ],
+            [
+              1.25037,
+              103.82789
+            ],
+            [
+              1.2505,
+              103.82702
+            ]
+          ]
+        }
+      ],
+      "geojson": {
+        "type": "FeatureCollection",
+        "metadata": {
+          "horizon_hours": 6,
+          "beached_percentage": 57.5,
+          "top_impacted_shores": {
+            "Sentosa & Southern Islands": 39,
+            "Pasir Ris Beach & Estuary": 30
+          },
+          "total_forecasted_hotspots": 4
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "id": "FC-6H-HS-EAST-01",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.83131,
+                1.26826
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 6,
+              "status": "Floating Plume",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 3.3,
+              "predicted_items": 324,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-6H-HS-EAST-01",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.94282,
+                  1.30478
+                ],
+                [
+                  103.92876,
+                  1.30122
+                ],
+                [
+                  103.91404,
+                  1.29598
+                ],
+                [
+                  103.89982,
+                  1.29082
+                ],
+                [
+                  103.88547,
+                  1.28645
+                ],
+                [
+                  103.87202,
+                  1.28358
+                ],
+                [
+                  103.8606,
+                  1.27898
+                ],
+                [
+                  103.84613,
+                  1.27502
+                ],
+                [
+                  103.8281,
+                  1.26971
+                ],
+                [
+                  103.83131,
+                  1.26826
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 6,
+              "risk_level": "Low"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-6H-HS-EAST-02",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.8178,
+                1.26487
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 6,
+              "status": "Floating Plume",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 26.7,
+              "predicted_items": 2,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-6H-HS-EAST-02",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.92879,
+                  1.30254
+                ],
+                [
+                  103.91672,
+                  1.29879
+                ],
+                [
+                  103.9042,
+                  1.29523
+                ],
+                [
+                  103.89205,
+                  1.29064
+                ],
+                [
+                  103.87917,
+                  1.28505
+                ],
+                [
+                  103.86708,
+                  1.27916
+                ],
+                [
+                  103.85379,
+                  1.27528
+                ],
+                [
+                  103.84037,
+                  1.26949
+                ],
+                [
+                  103.82749,
+                  1.26458
+                ],
+                [
+                  103.8178,
+                  1.26487
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 6,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-6H-HS-PASI-03",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.95213,
+                1.38146
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 6,
+              "status": "Beached Accumulation",
+              "target_shore": "Pasir Ris Beach & Estuary",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 4,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-6H-HS-PASI-03",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.95372,
+                  1.38131
+                ],
+                [
+                  103.95317,
+                  1.38141
+                ],
+                [
+                  103.95213,
+                  1.38146
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 6,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-6H-HS-SOUT-04",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.82702,
+                1.2505
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 6,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-6H-HS-SOUT-04",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.82899,
+                  1.25117
+                ],
+                [
+                  103.82789,
+                  1.25037
+                ],
+                [
+                  103.82702,
+                  1.2505
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-6H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 6,
+              "risk_level": "High"
+            }
+          }
+        ]
+      }
+    },
+    "12": {
+      "horizon_hours": 12,
+      "total_particles": 120,
+      "beached_percentage": 70.8,
+      "top_impacted_shores": {
+        "Sentosa & Southern Islands": 55,
+        "Pasir Ris Beach & Estuary": 30
+      },
+      "hotspots": [
+        {
+          "forecast_id": "FC-12H-HS-EAST-01",
+          "origin_hotspot_id": "HS-EAST-01",
+          "origin_sector": "east_coast",
+          "horizon_hours": 12,
+          "predicted_lat": 1.24255,
+          "predicted_lng": 103.75567,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 50.0,
+          "predicted_items": 324,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30478,
+              103.94282
+            ],
+            [
+              1.29598,
+              103.91404
+            ],
+            [
+              1.28645,
+              103.88547
+            ],
+            [
+              1.27898,
+              103.8606
+            ],
+            [
+              1.26971,
+              103.8281
+            ],
+            [
+              1.25917,
+              103.79557
+            ],
+            [
+              1.24884,
+              103.75778
+            ],
+            [
+              1.23711,
+              103.72306
+            ],
+            [
+              1.2243,
+              103.68363
+            ],
+            [
+              1.24255,
+              103.75567
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-12H-HS-EAST-02",
+          "origin_hotspot_id": "HS-EAST-02",
+          "origin_sector": "east_coast",
+          "horizon_hours": 12,
+          "predicted_lat": 1.23353,
+          "predicted_lng": 103.72247,
+          "status": "Floating Plume",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 33.3,
+          "predicted_items": 2,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30254,
+              103.92879
+            ],
+            [
+              1.29879,
+              103.91672
+            ],
+            [
+              1.29523,
+              103.9042
+            ],
+            [
+              1.29064,
+              103.89205
+            ],
+            [
+              1.28505,
+              103.87917
+            ],
+            [
+              1.27916,
+              103.86708
+            ],
+            [
+              1.27528,
+              103.85379
+            ],
+            [
+              1.26949,
+              103.84037
+            ],
+            [
+              1.26458,
+              103.82749
+            ],
+            [
+              1.23353,
+              103.72247
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-12H-HS-PASI-03",
+          "origin_hotspot_id": "HS-PASI-03",
+          "origin_sector": "pasir_ris_changi",
+          "horizon_hours": 12,
+          "predicted_lat": 1.38146,
+          "predicted_lng": 103.95213,
+          "status": "Beached Accumulation",
+          "target_shore": "Pasir Ris Beach & Estuary",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 4,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.38131,
+              103.95372
+            ],
+            [
+              1.38141,
+              103.95317
+            ],
+            [
+              1.38146,
+              103.95213
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-12H-HS-SOUT-04",
+          "origin_hotspot_id": "HS-SOUT-04",
+          "origin_sector": "southern_islands",
+          "horizon_hours": 12,
+          "predicted_lat": 1.2505,
+          "predicted_lng": 103.82702,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 2,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.25117,
+              103.82899
+            ],
+            [
+              1.25037,
+              103.82789
+            ],
+            [
+              1.2505,
+              103.82702
+            ]
+          ]
+        }
+      ],
+      "geojson": {
+        "type": "FeatureCollection",
+        "metadata": {
+          "horizon_hours": 12,
+          "beached_percentage": 70.8,
+          "top_impacted_shores": {
+            "Sentosa & Southern Islands": 55,
+            "Pasir Ris Beach & Estuary": 30
+          },
+          "total_forecasted_hotspots": 4
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "id": "FC-12H-HS-EAST-01",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.75567,
+                1.24255
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 12,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 50.0,
+              "predicted_items": 324,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-12H-HS-EAST-01",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.94282,
+                  1.30478
+                ],
+                [
+                  103.91404,
+                  1.29598
+                ],
+                [
+                  103.88547,
+                  1.28645
+                ],
+                [
+                  103.8606,
+                  1.27898
+                ],
+                [
+                  103.8281,
+                  1.26971
+                ],
+                [
+                  103.79557,
+                  1.25917
+                ],
+                [
+                  103.75778,
+                  1.24884
+                ],
+                [
+                  103.72306,
+                  1.23711
+                ],
+                [
+                  103.68363,
+                  1.2243
+                ],
+                [
+                  103.75567,
+                  1.24255
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 12,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-12H-HS-EAST-02",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.72247,
+                1.23353
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 12,
+              "status": "Floating Plume",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 33.3,
+              "predicted_items": 2,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-12H-HS-EAST-02",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.92879,
+                  1.30254
+                ],
+                [
+                  103.91672,
+                  1.29879
+                ],
+                [
+                  103.9042,
+                  1.29523
+                ],
+                [
+                  103.89205,
+                  1.29064
+                ],
+                [
+                  103.87917,
+                  1.28505
+                ],
+                [
+                  103.86708,
+                  1.27916
+                ],
+                [
+                  103.85379,
+                  1.27528
+                ],
+                [
+                  103.84037,
+                  1.26949
+                ],
+                [
+                  103.82749,
+                  1.26458
+                ],
+                [
+                  103.72247,
+                  1.23353
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 12,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-12H-HS-PASI-03",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.95213,
+                1.38146
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 12,
+              "status": "Beached Accumulation",
+              "target_shore": "Pasir Ris Beach & Estuary",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 4,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-12H-HS-PASI-03",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.95372,
+                  1.38131
+                ],
+                [
+                  103.95317,
+                  1.38141
+                ],
+                [
+                  103.95213,
+                  1.38146
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 12,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-12H-HS-SOUT-04",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.82702,
+                1.2505
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 12,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-12H-HS-SOUT-04",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.82899,
+                  1.25117
+                ],
+                [
+                  103.82789,
+                  1.25037
+                ],
+                [
+                  103.82702,
+                  1.2505
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-12H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 12,
+              "risk_level": "High"
+            }
+          }
+        ]
+      }
+    },
+    "24": {
+      "horizon_hours": 24,
+      "total_particles": 120,
+      "beached_percentage": 70.8,
+      "top_impacted_shores": {
+        "Sentosa & Southern Islands": 55,
+        "Pasir Ris Beach & Estuary": 30
+      },
+      "hotspots": [
+        {
+          "forecast_id": "FC-24H-HS-EAST-01",
+          "origin_hotspot_id": "HS-EAST-01",
+          "origin_sector": "east_coast",
+          "horizon_hours": 24,
+          "predicted_lat": 1.22066,
+          "predicted_lng": 103.68532,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 50.0,
+          "predicted_items": 324,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30478,
+              103.94282
+            ],
+            [
+              1.29185,
+              103.90094
+            ],
+            [
+              1.28021,
+              103.86442
+            ],
+            [
+              1.2668,
+              103.81743
+            ],
+            [
+              1.25017,
+              103.76611
+            ],
+            [
+              1.23366,
+              103.71355
+            ],
+            [
+              1.21826,
+              103.66187
+            ],
+            [
+              1.20649,
+              103.60822
+            ],
+            [
+              1.18883,
+              103.55475
+            ],
+            [
+              1.22066,
+              103.68532
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-24H-HS-EAST-02",
+          "origin_hotspot_id": "HS-EAST-02",
+          "origin_sector": "east_coast",
+          "horizon_hours": 24,
+          "predicted_lat": 1.20747,
+          "predicted_lng": 103.6403,
+          "status": "Floating Plume",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 33.3,
+          "predicted_items": 2,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30254,
+              103.92879
+            ],
+            [
+              1.29879,
+              103.91672
+            ],
+            [
+              1.29523,
+              103.9042
+            ],
+            [
+              1.29064,
+              103.89205
+            ],
+            [
+              1.28505,
+              103.87917
+            ],
+            [
+              1.27916,
+              103.86708
+            ],
+            [
+              1.27528,
+              103.85379
+            ],
+            [
+              1.26949,
+              103.84037
+            ],
+            [
+              1.26458,
+              103.82749
+            ],
+            [
+              1.20747,
+              103.6403
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-24H-HS-PASI-03",
+          "origin_hotspot_id": "HS-PASI-03",
+          "origin_sector": "pasir_ris_changi",
+          "horizon_hours": 24,
+          "predicted_lat": 1.38146,
+          "predicted_lng": 103.95213,
+          "status": "Beached Accumulation",
+          "target_shore": "Pasir Ris Beach & Estuary",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 4,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.38131,
+              103.95372
+            ],
+            [
+              1.38141,
+              103.95317
+            ],
+            [
+              1.38146,
+              103.95213
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-24H-HS-SOUT-04",
+          "origin_hotspot_id": "HS-SOUT-04",
+          "origin_sector": "southern_islands",
+          "horizon_hours": 24,
+          "predicted_lat": 1.2505,
+          "predicted_lng": 103.82702,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 2,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.25117,
+              103.82899
+            ],
+            [
+              1.25037,
+              103.82789
+            ],
+            [
+              1.2505,
+              103.82702
+            ]
+          ]
+        }
+      ],
+      "geojson": {
+        "type": "FeatureCollection",
+        "metadata": {
+          "horizon_hours": 24,
+          "beached_percentage": 70.8,
+          "top_impacted_shores": {
+            "Sentosa & Southern Islands": 55,
+            "Pasir Ris Beach & Estuary": 30
+          },
+          "total_forecasted_hotspots": 4
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "id": "FC-24H-HS-EAST-01",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.68532,
+                1.22066
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 24,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 50.0,
+              "predicted_items": 324,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-24H-HS-EAST-01",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.94282,
+                  1.30478
+                ],
+                [
+                  103.90094,
+                  1.29185
+                ],
+                [
+                  103.86442,
+                  1.28021
+                ],
+                [
+                  103.81743,
+                  1.2668
+                ],
+                [
+                  103.76611,
+                  1.25017
+                ],
+                [
+                  103.71355,
+                  1.23366
+                ],
+                [
+                  103.66187,
+                  1.21826
+                ],
+                [
+                  103.60822,
+                  1.20649
+                ],
+                [
+                  103.55475,
+                  1.18883
+                ],
+                [
+                  103.68532,
+                  1.22066
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 24,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-24H-HS-EAST-02",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.6403,
+                1.20747
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 24,
+              "status": "Floating Plume",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 33.3,
+              "predicted_items": 2,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-24H-HS-EAST-02",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.92879,
+                  1.30254
+                ],
+                [
+                  103.91672,
+                  1.29879
+                ],
+                [
+                  103.9042,
+                  1.29523
+                ],
+                [
+                  103.89205,
+                  1.29064
+                ],
+                [
+                  103.87917,
+                  1.28505
+                ],
+                [
+                  103.86708,
+                  1.27916
+                ],
+                [
+                  103.85379,
+                  1.27528
+                ],
+                [
+                  103.84037,
+                  1.26949
+                ],
+                [
+                  103.82749,
+                  1.26458
+                ],
+                [
+                  103.6403,
+                  1.20747
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 24,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-24H-HS-PASI-03",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.95213,
+                1.38146
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 24,
+              "status": "Beached Accumulation",
+              "target_shore": "Pasir Ris Beach & Estuary",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 4,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-24H-HS-PASI-03",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.95372,
+                  1.38131
+                ],
+                [
+                  103.95317,
+                  1.38141
+                ],
+                [
+                  103.95213,
+                  1.38146
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 24,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-24H-HS-SOUT-04",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.82702,
+                1.2505
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 24,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-24H-HS-SOUT-04",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.82899,
+                  1.25117
+                ],
+                [
+                  103.82789,
+                  1.25037
+                ],
+                [
+                  103.82702,
+                  1.2505
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-24H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 24,
+              "risk_level": "High"
+            }
+          }
+        ]
+      }
+    },
+    "48": {
+      "horizon_hours": 48,
+      "total_particles": 120,
+      "beached_percentage": 70.8,
+      "top_impacted_shores": {
+        "Sentosa & Southern Islands": 55,
+        "Pasir Ris Beach & Estuary": 30
+      },
+      "hotspots": [
+        {
+          "forecast_id": "FC-48H-HS-EAST-01",
+          "origin_hotspot_id": "HS-EAST-01",
+          "origin_sector": "east_coast",
+          "horizon_hours": 48,
+          "predicted_lat": 1.22066,
+          "predicted_lng": 103.68532,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 50.0,
+          "predicted_items": 324,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30478,
+              103.94282
+            ],
+            [
+              1.29185,
+              103.90094
+            ],
+            [
+              1.28021,
+              103.86442
+            ],
+            [
+              1.2668,
+              103.81743
+            ],
+            [
+              1.25017,
+              103.76611
+            ],
+            [
+              1.23366,
+              103.71355
+            ],
+            [
+              1.21826,
+              103.66187
+            ],
+            [
+              1.20649,
+              103.60822
+            ],
+            [
+              1.18883,
+              103.55475
+            ],
+            [
+              1.22066,
+              103.68532
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-48H-HS-EAST-02",
+          "origin_hotspot_id": "HS-EAST-02",
+          "origin_sector": "east_coast",
+          "horizon_hours": 48,
+          "predicted_lat": 1.20747,
+          "predicted_lng": 103.6403,
+          "status": "Floating Plume",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 33.3,
+          "predicted_items": 2,
+          "risk_level": "Medium",
+          "trajectory_points": [
+            [
+              1.30254,
+              103.92879
+            ],
+            [
+              1.29879,
+              103.91672
+            ],
+            [
+              1.29523,
+              103.9042
+            ],
+            [
+              1.29064,
+              103.89205
+            ],
+            [
+              1.28505,
+              103.87917
+            ],
+            [
+              1.27916,
+              103.86708
+            ],
+            [
+              1.27528,
+              103.85379
+            ],
+            [
+              1.26949,
+              103.84037
+            ],
+            [
+              1.26458,
+              103.82749
+            ],
+            [
+              1.20747,
+              103.6403
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-48H-HS-PASI-03",
+          "origin_hotspot_id": "HS-PASI-03",
+          "origin_sector": "pasir_ris_changi",
+          "horizon_hours": 48,
+          "predicted_lat": 1.38146,
+          "predicted_lng": 103.95213,
+          "status": "Beached Accumulation",
+          "target_shore": "Pasir Ris Beach & Estuary",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 4,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.38131,
+              103.95372
+            ],
+            [
+              1.38141,
+              103.95317
+            ],
+            [
+              1.38146,
+              103.95213
+            ]
+          ]
+        },
+        {
+          "forecast_id": "FC-48H-HS-SOUT-04",
+          "origin_hotspot_id": "HS-SOUT-04",
+          "origin_sector": "southern_islands",
+          "horizon_hours": 48,
+          "predicted_lat": 1.2505,
+          "predicted_lng": 103.82702,
+          "status": "Beached Accumulation",
+          "target_shore": "Sentosa & Southern Islands",
+          "beached_probability_pct": 100.0,
+          "predicted_items": 2,
+          "risk_level": "High",
+          "trajectory_points": [
+            [
+              1.25117,
+              103.82899
+            ],
+            [
+              1.25037,
+              103.82789
+            ],
+            [
+              1.2505,
+              103.82702
+            ]
+          ]
+        }
+      ],
+      "geojson": {
+        "type": "FeatureCollection",
+        "metadata": {
+          "horizon_hours": 48,
+          "beached_percentage": 70.8,
+          "top_impacted_shores": {
+            "Sentosa & Southern Islands": 55,
+            "Pasir Ris Beach & Estuary": 30
+          },
+          "total_forecasted_hotspots": 4
+        },
+        "features": [
+          {
+            "type": "Feature",
+            "id": "FC-48H-HS-EAST-01",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.68532,
+                1.22066
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 48,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 50.0,
+              "predicted_items": 324,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-48H-HS-EAST-01",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.94282,
+                  1.30478
+                ],
+                [
+                  103.90094,
+                  1.29185
+                ],
+                [
+                  103.86442,
+                  1.28021
+                ],
+                [
+                  103.81743,
+                  1.2668
+                ],
+                [
+                  103.76611,
+                  1.25017
+                ],
+                [
+                  103.71355,
+                  1.23366
+                ],
+                [
+                  103.66187,
+                  1.21826
+                ],
+                [
+                  103.60822,
+                  1.20649
+                ],
+                [
+                  103.55475,
+                  1.18883
+                ],
+                [
+                  103.68532,
+                  1.22066
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-EAST-01",
+              "origin_hotspot_id": "HS-EAST-01",
+              "horizon_hours": 48,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-48H-HS-EAST-02",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.6403,
+                1.20747
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 48,
+              "status": "Floating Plume",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 33.3,
+              "predicted_items": 2,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-48H-HS-EAST-02",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.92879,
+                  1.30254
+                ],
+                [
+                  103.91672,
+                  1.29879
+                ],
+                [
+                  103.9042,
+                  1.29523
+                ],
+                [
+                  103.89205,
+                  1.29064
+                ],
+                [
+                  103.87917,
+                  1.28505
+                ],
+                [
+                  103.86708,
+                  1.27916
+                ],
+                [
+                  103.85379,
+                  1.27528
+                ],
+                [
+                  103.84037,
+                  1.26949
+                ],
+                [
+                  103.82749,
+                  1.26458
+                ],
+                [
+                  103.6403,
+                  1.20747
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-EAST-02",
+              "origin_hotspot_id": "HS-EAST-02",
+              "horizon_hours": 48,
+              "risk_level": "Medium"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-48H-HS-PASI-03",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.95213,
+                1.38146
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 48,
+              "status": "Beached Accumulation",
+              "target_shore": "Pasir Ris Beach & Estuary",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 4,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-48H-HS-PASI-03",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.95372,
+                  1.38131
+                ],
+                [
+                  103.95317,
+                  1.38141
+                ],
+                [
+                  103.95213,
+                  1.38146
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-PASI-03",
+              "origin_hotspot_id": "HS-PASI-03",
+              "horizon_hours": 48,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "FC-48H-HS-SOUT-04",
+            "geometry": {
+              "type": "Point",
+              "coordinates": [
+                103.82702,
+                1.2505
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 48,
+              "status": "Beached Accumulation",
+              "target_shore": "Sentosa & Southern Islands",
+              "beached_probability_pct": 100.0,
+              "predicted_items": 2,
+              "risk_level": "High"
+            }
+          },
+          {
+            "type": "Feature",
+            "id": "TRAJ-FC-48H-HS-SOUT-04",
+            "geometry": {
+              "type": "LineString",
+              "coordinates": [
+                [
+                  103.82899,
+                  1.25117
+                ],
+                [
+                  103.82789,
+                  1.25037
+                ],
+                [
+                  103.82702,
+                  1.2505
+                ]
+              ]
+            },
+            "properties": {
+              "forecast_id": "FC-48H-HS-SOUT-04",
+              "origin_hotspot_id": "HS-SOUT-04",
+              "horizon_hours": 48,
+              "risk_level": "High"
+            }
+          }
+        ]
+      }
+    }
+  }
+}

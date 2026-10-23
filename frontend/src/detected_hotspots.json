@@ -1,0 +1,363 @@
+{
+  "version": "1.0.0",
+  "generated_at": "Phase 1 Verified Output",
+  "hotspots": [
+    {
+      "hotspot_id": "HS-EAST-01",
+      "name": "East Coast Shoreline & Bedok Waters Hotspot #1",
+      "sector_id": "east_coast",
+      "centroid_lat": 1.30546,
+      "centroid_lng": 103.94202,
+      "radius_meters": 120.0,
+      "severity": "High",
+      "composite_confidence": 95.0,
+      "detection_count": 324,
+      "total_area_sq_m": 32400.0,
+      "sources": [
+        "Sentinel-2 Satellite"
+      ],
+      "item_breakdown": {
+        "Marine debris slick": 324
+      },
+      "detection_ids": [
+        "S2-LITTER-012"
+      ]
+    },
+    {
+      "hotspot_id": "HS-EAST-02",
+      "name": "East Coast Shoreline & Bedok Waters Hotspot #2",
+      "sector_id": "east_coast",
+      "centroid_lat": 1.3025,
+      "centroid_lng": 103.9288,
+      "radius_meters": 120.0,
+      "severity": "Medium",
+      "composite_confidence": 88.5,
+      "detection_count": 2,
+      "total_area_sq_m": 45.0,
+      "sources": [
+        "UAV Drone Survey"
+      ],
+      "item_breakdown": {
+        "Plastic bottles & fragments": 2
+      },
+      "detection_ids": [
+        "UAV-ECP-001"
+      ]
+    },
+    {
+      "hotspot_id": "HS-PASI-03",
+      "name": "Pasir Ris, Changi & Pulau Ubin Hotspot #3",
+      "sector_id": "pasir_ris_changi",
+      "centroid_lat": 1.3815,
+      "centroid_lng": 103.9532,
+      "radius_meters": 120.0,
+      "severity": "Medium",
+      "composite_confidence": 82.0,
+      "detection_count": 4,
+      "total_area_sq_m": 25.0,
+      "sources": [
+        "UAV Drone Survey"
+      ],
+      "item_breakdown": {
+        "Styrofoam & food containers": 4
+      },
+      "detection_ids": [
+        "UAV-PASIR-002"
+      ]
+    },
+    {
+      "hotspot_id": "HS-SOUT-04",
+      "name": "Sentosa, Labrador & Southern Islands Hotspot #4",
+      "sector_id": "southern_islands",
+      "centroid_lat": 1.2512,
+      "centroid_lng": 103.829,
+      "radius_meters": 120.0,
+      "severity": "Medium",
+      "composite_confidence": 79.0,
+      "detection_count": 2,
+      "total_area_sq_m": 15.0,
+      "sources": [
+        "Coastal CCTV"
+      ],
+      "item_breakdown": {
+        "Can & beverage packaging": 2
+      },
+      "detection_ids": [
+        "CCTV-SENTOSA-003"
+      ]
+    }
+  ],
+  "raw_detections": [
+    {
+      "id": "S2-LITTER-012",
+      "lat": 1.305462,
+      "lng": 103.942017,
+      "confidence": 95.0,
+      "severity": "High",
+      "source": "Sentinel-2 Satellite",
+      "label": "Marine debris slick",
+      "items_count": 324,
+      "area_sq_m": 32400.0,
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              103.936303,
+              1.309748
+            ],
+            [
+              103.936303,
+              1.301176
+            ],
+            [
+              103.947731,
+              1.301176
+            ],
+            [
+              103.947731,
+              1.309748
+            ],
+            [
+              103.936303,
+              1.309748
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "id": "UAV-ECP-001",
+      "lat": 1.3025,
+      "lng": 103.9288,
+      "confidence": 88.5,
+      "severity": "Low",
+      "source": "UAV Drone Survey",
+      "label": "Plastic bottles & fragments",
+      "items_count": 2,
+      "area_sq_m": 45.0,
+      "details": {
+        "macro_plastic_fragment": 2
+      }
+    },
+    {
+      "id": "UAV-PASIR-002",
+      "lat": 1.3815,
+      "lng": 103.9532,
+      "confidence": 82.0,
+      "severity": "Medium",
+      "source": "UAV Drone Survey",
+      "label": "Styrofoam & food containers",
+      "items_count": 4,
+      "area_sq_m": 25.0,
+      "details": {
+        "styrofoam_container": 3,
+        "plastic_bottle": 1
+      }
+    },
+    {
+      "id": "CCTV-SENTOSA-003",
+      "lat": 1.2512,
+      "lng": 103.829,
+      "confidence": 79.0,
+      "severity": "Low",
+      "source": "Coastal CCTV",
+      "label": "Can & beverage packaging",
+      "items_count": 2,
+      "area_sq_m": 15.0,
+      "details": {
+        "can": 2
+      }
+    }
+  ],
+  "geojson": {
+    "type": "FeatureCollection",
+    "metadata": {
+      "total_hotspots": 4,
+      "high_severity_count": 1,
+      "medium_severity_count": 3,
+      "low_severity_count": 0
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "HS-EAST-01",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.94202,
+            1.30546
+          ]
+        },
+        "properties": {
+          "id": "HS-EAST-01",
+          "name": "East Coast Shoreline & Bedok Waters Hotspot #1",
+          "sector_id": "east_coast",
+          "severity": "High",
+          "confidence": 95.0,
+          "radius_meters": 120.0,
+          "detection_count": 324,
+          "total_area_sq_m": 32400.0,
+          "sources": [
+            "Sentinel-2 Satellite"
+          ],
+          "item_breakdown": {
+            "Marine debris slick": 324
+          },
+          "detection_ids": [
+            "S2-LITTER-012"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "HS-EAST-02",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.9288,
+            1.3025
+          ]
+        },
+        "properties": {
+          "id": "HS-EAST-02",
+          "name": "East Coast Shoreline & Bedok Waters Hotspot #2",
+          "sector_id": "east_coast",
+          "severity": "Medium",
+          "confidence": 88.5,
+          "radius_meters": 120.0,
+          "detection_count": 2,
+          "total_area_sq_m": 45.0,
+          "sources": [
+            "UAV Drone Survey"
+          ],
+          "item_breakdown": {
+            "Plastic bottles & fragments": 2
+          },
+          "detection_ids": [
+            "UAV-ECP-001"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "HS-PASI-03",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.9532,
+            1.3815
+          ]
+        },
+        "properties": {
+          "id": "HS-PASI-03",
+          "name": "Pasir Ris, Changi & Pulau Ubin Hotspot #3",
+          "sector_id": "pasir_ris_changi",
+          "severity": "Medium",
+          "confidence": 82.0,
+          "radius_meters": 120.0,
+          "detection_count": 4,
+          "total_area_sq_m": 25.0,
+          "sources": [
+            "UAV Drone Survey"
+          ],
+          "item_breakdown": {
+            "Styrofoam & food containers": 4
+          },
+          "detection_ids": [
+            "UAV-PASIR-002"
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "HS-SOUT-04",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.829,
+            1.2512
+          ]
+        },
+        "properties": {
+          "id": "HS-SOUT-04",
+          "name": "Sentosa, Labrador & Southern Islands Hotspot #4",
+          "sector_id": "southern_islands",
+          "severity": "Medium",
+          "confidence": 79.0,
+          "radius_meters": 120.0,
+          "detection_count": 2,
+          "total_area_sq_m": 15.0,
+          "sources": [
+            "Coastal CCTV"
+          ],
+          "item_breakdown": {
+            "Can & beverage packaging": 2
+          },
+          "detection_ids": [
+            "CCTV-SENTOSA-003"
+          ]
+        }
+      }
+    ]
+  },
+  "satellite_polygons": {
+    "type": "FeatureCollection",
+    "metadata": {
+      "sensor": "Sentinel-2 MSI",
+      "bands_processed": 11,
+      "indices_derived": 8,
+      "total_detections": 1,
+      "total_area_sq_meters": 32400.0
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "S2-LITTER-012",
+        "geometry": {
+          "type": "Polygon",
+          "coordinates": [
+            [
+              [
+                103.936303,
+                1.309748
+              ],
+              [
+                103.936303,
+                1.301176
+              ],
+              [
+                103.947731,
+                1.301176
+              ],
+              [
+                103.947731,
+                1.309748
+              ],
+              [
+                103.936303,
+                1.309748
+              ]
+            ]
+          ]
+        },
+        "properties": {
+          "id": "S2-LITTER-012",
+          "label": "Marine debris",
+          "source_type": "Sentinel-2 Satellite",
+          "centroid_lat": 1.305462,
+          "centroid_lng": 103.942017,
+          "confidence": 95.0,
+          "severity": "High",
+          "area_sq_meters": 32400.0,
+          "pixel_count": 324,
+          "spectral_signature": {
+            "mean_fdi": 0.0519,
+            "mean_ndvi": 0.0968,
+            "mean_ndwi": -0.0303
+          }
+        }
+      }
+    ]
+  }
+}

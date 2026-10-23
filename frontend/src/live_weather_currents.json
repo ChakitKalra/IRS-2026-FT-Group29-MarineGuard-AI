@@ -1,0 +1,1887 @@
+{
+  "version": "1.0.0",
+  "timestamp": "2026-10-19T14:29:00+08:00",
+  "tidal_stage": "Ebb (Westward to Malacca Strait)",
+  "mean_current_knots": 1.04,
+  "current_heading_deg": 248.0,
+  "avg_wind_knots": 6.0,
+  "wind_direction_from_deg": 156.0,
+  "wind_direction_towards_deg": 336.0,
+  "island_max_rain_mm_hr": 0.0,
+  "inland_flushing_risk": "Low",
+  "inland_flushing_rationale": "Dry or light conditions. Inland runoff minimal (~3% baseline per NEA marine litter study).",
+  "coastal_sectors": [
+    {
+      "sector": "East Coast Park",
+      "coordinates": [
+        1.303,
+        103.933
+      ],
+      "current": {
+        "speed_knots": 1.1,
+        "speed_ms": 0.568,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 3.7,
+        "speed_ms": 1.93,
+        "heading_towards_deg": 302.8
+      },
+      "combined_drift": {
+        "speed_knots": 1.15,
+        "speed_ms": 0.591,
+        "heading_deg": 251.1,
+        "current_contribution_pct": 93.6,
+        "wind_contribution_pct": 6.4
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Pasir Ris Shoreline",
+      "coordinates": [
+        1.383,
+        103.953
+      ],
+      "current": {
+        "speed_knots": 0.71,
+        "speed_ms": 0.365,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 6.3,
+        "speed_ms": 3.25,
+        "heading_towards_deg": 328.6
+      },
+      "combined_drift": {
+        "speed_knots": 0.74,
+        "speed_ms": 0.381,
+        "heading_deg": 257.6,
+        "current_contribution_pct": 84.9,
+        "wind_contribution_pct": 15.1
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Sentosa / Southern Islands",
+      "coordinates": [
+        1.25,
+        103.831
+      ],
+      "current": {
+        "speed_knots": 1.48,
+        "speed_ms": 0.763,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 2.8,
+        "speed_ms": 1.42,
+        "heading_towards_deg": 244.2
+      },
+      "combined_drift": {
+        "speed_knots": 1.54,
+        "speed_ms": 0.791,
+        "heading_deg": 247.9,
+        "current_contribution_pct": 96.4,
+        "wind_contribution_pct": 3.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Singapore Strait Fairway",
+      "coordinates": [
+        1.2,
+        103.88
+      ],
+      "current": {
+        "speed_knots": 1.48,
+        "speed_ms": 0.761,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 2.8,
+        "speed_ms": 1.43,
+        "heading_towards_deg": 315.2
+      },
+      "combined_drift": {
+        "speed_knots": 1.5,
+        "speed_ms": 0.773,
+        "heading_deg": 249.9,
+        "current_contribution_pct": 96.4,
+        "wind_contribution_pct": 3.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Marina Barrage Estuary",
+      "coordinates": [
+        1.2799,
+        103.8703
+      ],
+      "current": {
+        "speed_knots": 1.23,
+        "speed_ms": 0.63,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 5.8,
+        "speed_ms": 2.98,
+        "heading_towards_deg": 24.0
+      },
+      "combined_drift": {
+        "speed_knots": 1.14,
+        "speed_ms": 0.589,
+        "heading_deg": 252.0,
+        "current_contribution_pct": 91.4,
+        "wind_contribution_pct": 8.6
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    },
+    {
+      "sector": "Tuas Marine Basin",
+      "coordinates": [
+        1.285,
+        103.65
+      ],
+      "current": {
+        "speed_knots": 1.18,
+        "speed_ms": 0.608,
+        "heading_deg": 248.0
+      },
+      "wind": {
+        "speed_knots": 4.5,
+        "speed_ms": 2.32,
+        "heading_towards_deg": 12.8
+      },
+      "combined_drift": {
+        "speed_knots": 1.13,
+        "speed_ms": 0.583,
+        "heading_deg": 251.7,
+        "current_contribution_pct": 92.9,
+        "wind_contribution_pct": 7.1
+      },
+      "local_rainfall_mm_hr": 0.0,
+      "flushing_risk": "Low"
+    }
+  ],
+  "current_points": [
+    {
+      "latitude": 1.14,
+      "longitude": 103.59,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.655,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.72,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.785,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.85,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.915,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 103.98,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 104.045,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.14,
+      "longitude": 104.11,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.59,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.655,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.72,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.785,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.85,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.915,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 103.98,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 104.045,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.1933,
+      "longitude": 104.11,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.59,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.655,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.72,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.785,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.85,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.915,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 103.98,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 104.045,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.2467,
+      "longitude": 104.11,
+      "u_ms": -0.831,
+      "v_ms": -0.336,
+      "speed_ms": 0.896,
+      "speed_knots": 1.74,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.59,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.655,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.72,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.785,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.85,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.915,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 103.98,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 104.045,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3,
+      "longitude": 104.11,
+      "u_ms": -0.542,
+      "v_ms": -0.219,
+      "speed_ms": 0.585,
+      "speed_knots": 1.14,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.59,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.655,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.72,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.785,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.85,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.915,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 103.98,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 104.045,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.3533,
+      "longitude": 104.11,
+      "u_ms": -0.253,
+      "v_ms": -0.102,
+      "speed_ms": 0.273,
+      "speed_knots": 0.53,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.59,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.655,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.72,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.785,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.85,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.915,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 103.98,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 104.045,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.4067,
+      "longitude": 104.11,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.59,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.655,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.72,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.785,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.85,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.915,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 103.98,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 104.045,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    },
+    {
+      "latitude": 1.46,
+      "longitude": 104.11,
+      "u_ms": -0.244,
+      "v_ms": -0.099,
+      "speed_ms": 0.263,
+      "speed_knots": 0.51,
+      "direction_towards_deg": 248.0
+    }
+  ],
+  "currents_geojson": {
+    "type": "FeatureCollection",
+    "metadata": {
+      "timestamp": "2026-10-19T06:31:48.616861+00:00",
+      "model": "Singapore Strait Hydrodynamic Physics (M2 Tidal Calibration)",
+      "mean_speed_knots": 1.04,
+      "dominant_heading_deg": 248.0,
+      "tidal_stage": "Ebb (Westward to Malacca Strait)",
+      "total_grid_points": 63
+    },
+    "features": [
+      {
+        "type": "Feature",
+        "id": "CURRENT-001",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-002",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-003",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-004",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-005",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-006",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-007",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-008",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-009",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.14
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-010",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-011",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-012",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-013",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-014",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-015",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-016",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-017",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-018",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.1933
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-019",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-020",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-021",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-022",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-023",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-024",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-025",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-026",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-027",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.2467
+          ]
+        },
+        "properties": {
+          "u_ms": -0.831,
+          "v_ms": -0.336,
+          "speed_ms": 0.896,
+          "speed_knots": 1.74,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-028",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-029",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-030",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-031",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-032",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-033",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-034",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-035",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-036",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.3
+          ]
+        },
+        "properties": {
+          "u_ms": -0.542,
+          "v_ms": -0.219,
+          "speed_ms": 0.585,
+          "speed_knots": 1.14,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-037",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-038",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-039",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-040",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-041",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-042",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-043",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-044",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-045",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.3533
+          ]
+        },
+        "properties": {
+          "u_ms": -0.253,
+          "v_ms": -0.102,
+          "speed_ms": 0.273,
+          "speed_knots": 0.53,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-046",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-047",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-048",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-049",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-050",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-051",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-052",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-053",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-054",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.4067
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-055",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.59,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-056",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.655,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-057",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.72,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-058",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.785,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-059",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.85,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-060",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.915,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-061",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.98,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-062",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.045,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      },
+      {
+        "type": "Feature",
+        "id": "CURRENT-063",
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            104.11,
+            1.46
+          ]
+        },
+        "properties": {
+          "u_ms": -0.244,
+          "v_ms": -0.099,
+          "speed_ms": 0.263,
+          "speed_knots": 0.51,
+          "direction_towards_deg": 248.0
+        }
+      }
+    ]
+  }
+}

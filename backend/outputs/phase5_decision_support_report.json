@@ -1,0 +1,312 @@
+{
+  "status": "success",
+  "phase": "Phase 5: Cleanup Decision Support & Resource Optimization",
+  "methodology": {
+    "ranking_framework": "Coastal Priority Index (CPI = Quantity x Urgency x Sensitivity)",
+    "intervention_types": [
+      "Rapid Shoreline Sweep & Cleanup Crew",
+      "Targeted UAV Verification Survey"
+    ],
+    "baseline_comparisons": [
+      "Fixed Routine Sweeps (48h)",
+      "Reactive Human Sightings"
+    ]
+  },
+  "summary": {
+    "total_hotspots_ranked": 4,
+    "critical_priority_count": 1,
+    "high_priority_count": 0,
+    "medium_priority_count": 0,
+    "low_priority_count": 3,
+    "total_estimated_debris_mass_kg": 1224.4,
+    "average_cpi_score": 32.5
+  },
+  "cpi_rankings": [
+    {
+      "hotspot_id": "HS-EAST-01",
+      "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #1",
+      "sector_id": "east_coast",
+      "sector_name": "East Coast Park (ECP) Recreational Corridor",
+      "cpi_score": 100.0,
+      "priority_tier": "Critical",
+      "quantity_score": 88.2,
+      "drift_urgency_factor": 1.35,
+      "sensitivity_weight": 1.4,
+      "detection_count": 324,
+      "total_area_sq_m": 32400.0,
+      "time_to_beach_hours": 6.0,
+      "beached_probability_pct": 50.0,
+      "target_shore": "Sentosa & Southern Islands",
+      "vulnerability_rationale": "High public beach footfall, coastal recreation, and camping amenities.",
+      "action_deadline_hours": 4.0
+    },
+    {
+      "hotspot_id": "HS-PASI-03",
+      "hotspot_name": "Pasir Ris, Changi & Pulau Ubin Hotspot #3",
+      "sector_id": "pasir_ris_changi",
+      "sector_name": "Pasir Ris & Changi Coastal Sector",
+      "cpi_score": 13.5,
+      "priority_tier": "Low",
+      "quantity_score": 8.0,
+      "drift_urgency_factor": 1.35,
+      "sensitivity_weight": 1.25,
+      "detection_count": 4,
+      "total_area_sq_m": 25.0,
+      "time_to_beach_hours": 6.0,
+      "beached_probability_pct": 100.0,
+      "target_shore": "Pasir Ris Beach & Estuary",
+      "vulnerability_rationale": "Estuarine mangrove fringes, recreational parks, and aquaculture kelongs.",
+      "action_deadline_hours": 4.0
+    },
+    {
+      "hotspot_id": "HS-SOUT-04",
+      "hotspot_name": "Sentosa, Labrador & Southern Islands Hotspot #4",
+      "sector_id": "southern_islands",
+      "sector_name": "Sentosa & Southern Islands Resort Enclave",
+      "cpi_score": 9.5,
+      "priority_tier": "Low",
+      "quantity_score": 5.2,
+      "drift_urgency_factor": 1.35,
+      "sensitivity_weight": 1.35,
+      "detection_count": 2,
+      "total_area_sq_m": 15.0,
+      "time_to_beach_hours": 6.0,
+      "beached_probability_pct": 100.0,
+      "target_shore": "Sentosa & Southern Islands",
+      "vulnerability_rationale": "Tourism beaches (Siloso/Palawan), coral conservation, and resort lagoons.",
+      "action_deadline_hours": 4.0
+    },
+    {
+      "hotspot_id": "HS-EAST-02",
+      "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #2",
+      "sector_id": "east_coast",
+      "sector_name": "East Coast Park (ECP) Recreational Corridor",
+      "cpi_score": 7.0,
+      "priority_tier": "Low",
+      "quantity_score": 5.9,
+      "drift_urgency_factor": 0.85,
+      "sensitivity_weight": 1.4,
+      "detection_count": 2,
+      "total_area_sq_m": 45.0,
+      "time_to_beach_hours": 6.0,
+      "beached_probability_pct": 33.3,
+      "target_shore": "Sentosa & Southern Islands",
+      "vulnerability_rationale": "High public beach footfall, coastal recreation, and camping amenities.",
+      "action_deadline_hours": 24.0
+    }
+  ],
+  "dispatch_recommendations": [
+    {
+      "order_id": "DSP-EAST-01",
+      "hotspot_id": "HS-EAST-01",
+      "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #1",
+      "cpi_score": 100.0,
+      "priority_tier": "Critical",
+      "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+      "target_coordinates": [
+        1.30546,
+        103.94202
+      ],
+      "staging_base": "Sentosa & Southern Islands Shoreline Staging Post",
+      "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+      "recommended_crew_size": 12,
+      "optimal_window_hours": "Immediate - Next 3 Hours",
+      "action_deadline_hours": 4.0,
+      "expected_debris_mass_kg": 1179.4,
+      "stranding_prevention_likelihood_pct": 25.0,
+      "operational_instructions": "Deploy rapid coastal sweep team to Sentosa & Southern Islands. Establish shoreline containment perimeter to prevent tidal refloating during high tide."
+    },
+    {
+      "order_id": "DSP-PASI-03",
+      "hotspot_id": "HS-PASI-03",
+      "hotspot_name": "Pasir Ris, Changi & Pulau Ubin Hotspot #3",
+      "cpi_score": 13.5,
+      "priority_tier": "Low",
+      "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+      "target_coordinates": [
+        1.3815,
+        103.9532
+      ],
+      "staging_base": "Pasir Ris Beach & Estuary Shoreline Staging Post",
+      "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+      "recommended_crew_size": 4,
+      "optimal_window_hours": "Immediate - Next 3 Hours",
+      "action_deadline_hours": 4.0,
+      "expected_debris_mass_kg": 15.0,
+      "stranding_prevention_likelihood_pct": 25.0,
+      "operational_instructions": "Deploy rapid coastal sweep team to Pasir Ris Beach & Estuary. Establish shoreline containment perimeter to prevent tidal refloating during high tide."
+    },
+    {
+      "order_id": "DSP-SOUT-04",
+      "hotspot_id": "HS-SOUT-04",
+      "hotspot_name": "Sentosa, Labrador & Southern Islands Hotspot #4",
+      "cpi_score": 9.5,
+      "priority_tier": "Low",
+      "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+      "target_coordinates": [
+        1.2512,
+        103.829
+      ],
+      "staging_base": "Sentosa & Southern Islands Shoreline Staging Post",
+      "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+      "recommended_crew_size": 4,
+      "optimal_window_hours": "Immediate - Next 3 Hours",
+      "action_deadline_hours": 4.0,
+      "expected_debris_mass_kg": 15.0,
+      "stranding_prevention_likelihood_pct": 25.0,
+      "operational_instructions": "Deploy rapid coastal sweep team to Sentosa & Southern Islands. Establish shoreline containment perimeter to prevent tidal refloating during high tide."
+    },
+    {
+      "order_id": "DSP-EAST-02",
+      "hotspot_id": "HS-EAST-02",
+      "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #2",
+      "cpi_score": 7.0,
+      "priority_tier": "Low",
+      "intervention_type": "Targeted UAV Verification Survey",
+      "target_coordinates": [
+        1.3025,
+        103.9288
+      ],
+      "staging_base": "Coastal Camera & Drone Command Node",
+      "assigned_assets": "DJI Matrice 300 RTK Coastal Survey UAV (RGB + Thermal Zoom)",
+      "recommended_crew_size": 2,
+      "optimal_window_hours": "Next 6 to 12 Hours",
+      "action_deadline_hours": 24.0,
+      "expected_debris_mass_kg": 15.0,
+      "stranding_prevention_likelihood_pct": 95.0,
+      "operational_instructions": "Execute autonomous 20-minute aerial sweep over coordinates (1.3025\u00b0N, 103.9288\u00b0E) to verify debris slick aggregation density before tasking marine craft."
+    }
+  ],
+  "benchmarking": {
+    "benchmark_timestamp": "2026-10-19 Baseline Verification",
+    "target_threshold_improvement_pct": 30.0,
+    "achieved_retrieval_improvement_pct": 130.1,
+    "achieved_latency_reduction_pct": 90.0,
+    "strategies": {
+      "marineguard_ai": {
+        "strategy_name": "MarineGuard AI Dynamic Optimization",
+        "description": "Hydrodynamic Lagrangian forward forecasting + Coastal Priority Index (CPI) dynamic tasking.",
+        "average_response_latency_hours": 2.4,
+        "shoreline_stranding_prevention_rate_pct": 79.2,
+        "debris_retrieval_rate_kg_per_hour": 88.6,
+        "operational_resource_efficiency_score": 94.0,
+        "estimated_annual_fuel_savings_pct": 34.5
+      },
+      "baseline_fixed_schedule": {
+        "strategy_name": "Baseline A: Fixed Routine Sweep (48h Interval)",
+        "description": "Traditional fixed-interval municipal beach cleaning schedule without real-time ocean drift awareness.",
+        "average_response_latency_hours": 24.0,
+        "shoreline_stranding_prevention_rate_pct": 14.0,
+        "debris_retrieval_rate_kg_per_hour": 38.5,
+        "operational_resource_efficiency_score": 52.0,
+        "estimated_annual_fuel_savings_pct": 0.0
+      },
+      "baseline_reactive_reporting": {
+        "strategy_name": "Baseline B: Reactive Sightings & Public Reports",
+        "description": "Opportunistic response initiated only after visual beachgoer reports or complaints are lodged.",
+        "average_response_latency_hours": 29.5,
+        "shoreline_stranding_prevention_rate_pct": 0.0,
+        "debris_retrieval_rate_kg_per_hour": 47.0,
+        "operational_resource_efficiency_score": 61.0,
+        "estimated_annual_fuel_savings_pct": 12.0
+      }
+    }
+  },
+  "geojson_dispatch_targets": {
+    "type": "FeatureCollection",
+    "features": [
+      {
+        "type": "Feature",
+        "properties": {
+          "order_id": "DSP-EAST-01",
+          "hotspot_id": "HS-EAST-01",
+          "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #1",
+          "cpi_score": 100.0,
+          "priority_tier": "Critical",
+          "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+          "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+          "recommended_crew_size": 12,
+          "optimal_window_hours": "Immediate - Next 3 Hours",
+          "expected_debris_mass_kg": 1179.36,
+          "stranding_prevention_likelihood_pct": 25.0
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.94202,
+            1.30546
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "order_id": "DSP-PASI-03",
+          "hotspot_id": "HS-PASI-03",
+          "hotspot_name": "Pasir Ris, Changi & Pulau Ubin Hotspot #3",
+          "cpi_score": 13.5,
+          "priority_tier": "Low",
+          "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+          "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+          "recommended_crew_size": 4,
+          "optimal_window_hours": "Immediate - Next 3 Hours",
+          "expected_debris_mass_kg": 15.0,
+          "stranding_prevention_likelihood_pct": 25.0
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.9532,
+            1.3815
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "order_id": "DSP-SOUT-04",
+          "hotspot_id": "HS-SOUT-04",
+          "hotspot_name": "Sentosa, Labrador & Southern Islands Hotspot #4",
+          "cpi_score": 9.5,
+          "priority_tier": "Low",
+          "intervention_type": "Rapid Shoreline Sweep & Cleanup Crew",
+          "assigned_assets": "Coastal Cleanup Utility Buggy, Heavy-Duty Sieve Rakes, Biohazard & Debris Storage Sacks",
+          "recommended_crew_size": 4,
+          "optimal_window_hours": "Immediate - Next 3 Hours",
+          "expected_debris_mass_kg": 15.0,
+          "stranding_prevention_likelihood_pct": 25.0
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.829,
+            1.2512
+          ]
+        }
+      },
+      {
+        "type": "Feature",
+        "properties": {
+          "order_id": "DSP-EAST-02",
+          "hotspot_id": "HS-EAST-02",
+          "hotspot_name": "East Coast Shoreline & Bedok Waters Hotspot #2",
+          "cpi_score": 7.0,
+          "priority_tier": "Low",
+          "intervention_type": "Targeted UAV Verification Survey",
+          "assigned_assets": "DJI Matrice 300 RTK Coastal Survey UAV (RGB + Thermal Zoom)",
+          "recommended_crew_size": 2,
+          "optimal_window_hours": "Next 6 to 12 Hours",
+          "expected_debris_mass_kg": 15.0,
+          "stranding_prevention_likelihood_pct": 95.0
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            103.9288,
+            1.3025
+          ]
+        }
+      }
+    ]
+  }
+}
