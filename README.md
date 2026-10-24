@@ -4,14 +4,6 @@
 
 ---
 
-## Project Credits
-
-| Student Full Name | Student ID | Work Items | Student Email |
-| ----------------- | ---------- | ---------- | ------------- |
-| Kalra Chakit      | A0352070R  | Architected and delivered the end-to-end MarineGuard AI coastal intelligence platform: multi-scale Sentinel-2 MSI satellite and UAV YOLOv8-OBB plastic debris detection; real-time integration of live meteorological wind data and hydrodynamic tidal current fields; 4th-order Runge-Kutta (RK4) Lagrangian forward transport simulation across +2h to +48h horizons; reverse particle backtracking with Bayesian transboundary source attribution and Inland Flushing Index; multi-criteria Coastal Priority Index (CPI) cleanup dispatch optimization generating dynamic Incident Action Plans (+130.1% retrieval efficiency); asynchronous FastAPI REST backend; and a Linear-inspired React GIS studio featuring three tactical layouts, basemap switching, advection controls, and full technical documentation. | chakitkalra@u.nus.edu |
-
----
-
 ## 🏛️ System Architecture
 
 ```mermaid
